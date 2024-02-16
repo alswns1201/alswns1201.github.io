@@ -283,11 +283,15 @@ header.home {
 
 }
 
-
+/**
+title
+ */
 
 .title-style {
 	font-family: 'Poppins', sans-serif;
+	vertical-align:  middle;
 }
+
 
 /**
    타이틀 애니매이션
@@ -322,6 +326,9 @@ img style
  article img { max-width: 4%;   }
 
  a img { max-width: 70%;   }
+
+
+
 
 
 

@@ -134,7 +134,7 @@ code {
 	font-size: 100%;
 	font-family: "Noto Sans";
 	text-transform: uppercase;
-	border-bottom: 1px solid gray;
+	border-bottom: 5px solid gray;
 	margin-bottom: 5px;
 }
 
@@ -147,9 +147,24 @@ a.nav-item {
 
 a.nav-item:hover { color: #777; }
 
-.badge { font-size: 70%; }
+.badge {
+	font-size: 50%;
+	background-color: #6c757d;
+	color: #fff;
+	padding: 0.25em 0.4em;
+	display: inline-block;
+	line-height: 1;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: 0.25em;
+
+
+}
+
 .badge::before { content: "("; }
 .badge::after { content: ")"; }
+
 
 .post-list > li {
 }
@@ -287,7 +302,7 @@ footer {
 }
 
 .sidebar-footer {
-	margin-top: 80px;
+	margin-top: 350px;
 	font-size: 0.75em;
 	font-weight: lighter;
 	font-family: "Roboto";

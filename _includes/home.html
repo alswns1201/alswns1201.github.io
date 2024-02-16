@@ -1,25 +1,22 @@
 <article class="post">
   <header class="post-header home">
-    <div class="post-title">Articles</div>
+    <div class="post-title">
+      About Me
+    </div>
   </header>
+  <h2 id="theme-monos">경력<span class="badge">총 3년 3개월</span></h2>
+  <blockquote>
+    <p>모아데이타 2022.10.06 ~  - AI LAP연구소 UI/UX팀.</p>
+  </blockquote>
+  <blockquote>
+    <p>신세계 아이엔씨 2022.06.20 ~ 2022.09.30 - 재무시스템 운영 개발팀.</p>
+  </blockquote>
+  <blockquote>
+    <p>더존비즈온 2020.10.05 ~2022.06.17  - 차세대 ERP 프로젝트 개발팀.</p>
+  </blockquote>
 
-  <div class="post-content">
-      {%- if site.posts.size > 0 -%}
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li class="post-list-item">
-        <!-- {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%} -->
-        {%- assign date_format = "%Y/%m/%d" -%}
-        <span class="post-date">{{ post.date | date: date_format }}</span>
-      	<a class="post-link" href="{{ post.url | relative_url }}">
-    	    {{ post.title | escape }}
-		</a>
-        {%- if site.show_excerpts -%}{{ post.excerpt }}{%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-  {%- endif -%}
-  </div>
+
+
 </article>
 
 

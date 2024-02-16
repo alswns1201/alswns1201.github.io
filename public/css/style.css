@@ -280,7 +280,44 @@ header.home {
 	font-size: 1.5em;
 	color: #111;
 	font-weight: bold;
+
 }
+
+
+
+.title-style {
+	font-family: 'Poppins', sans-serif;
+}
+
+/**
+   타이틀 애니매이션
+ */
+@keyframes showItem {
+	from {
+		transform: translateY(100px);
+		opacity: 0;
+		color: rgb(0, 204, 255);
+	}
+
+	to {
+		transform: translateY(0px);
+		opacity: 2;
+	}
+}
+
+.stagger-item {
+	animation: showItem 1.0s;
+	animation-fill-mode: both;
+}
+.stagger-item:nth-child(1) {
+	animation-delay: 0.3s;
+}
+.stagger-item:nth-child(2) {
+	animation-delay: 0.6s;
+}
+
+
+
 
 .post-date {
 	text-transform: uppercase;

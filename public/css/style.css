@@ -49,7 +49,8 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: 'Gelasio', 'Nanum Myeongjo', serif;
+	/*font-family: 'Gelasio', 'Nanum Myeongjo', serif;*/
+	font-family: "Noto Sans KR",sans-serif;
 	color: #2c3e50;
 }
 
@@ -147,23 +148,8 @@ a.nav-item {
 
 a.nav-item:hover { color: #777; }
 
-.badge {
-	font-size: 50%;
-	background-color: #6c757d;
-	color: #fff;
-	padding: 0.25em 0.4em;
-	display: inline-block;
-	line-height: 1;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: baseline;
-	border-radius: 0.25em;
-	font-family: "Noto Sans KR", sans-serif;
 
-}
 
-/*.badge::before { content: "("; }*/
-/*.badge::after { content: ")"; }*/
 
 
 .post-list > li {
@@ -222,6 +208,7 @@ article {
 	font-size: 17px;
 	margin-bottom: 100px;
 	line-height: 1.9;
+	font-family: 'Noto Sans Korean', sans-serif;
 }
 
 article.home div a, article.home pre a { color: #2c3e50; }
@@ -283,58 +270,6 @@ header.home {
 
 }
 
-/**
-title
- */
-
-.title-style {
-	font-family: 'Poppins', sans-serif;
-	vertical-align:  middle;
-}
-
-
-/**
-   타이틀 애니매이션
- */
-@keyframes showItem {
-	from {
-		transform: translateY(100px);
-		opacity: 0;
-		color: rgb(0, 204, 255);
-	}
-
-	to {
-		transform: translateY(0px);
-		opacity: 2;
-	}
-}
-
-.stagger-item {
-	animation: showItem 1.0s;
-	animation-fill-mode: both;
-}
-.stagger-item:nth-child(1) {
-	animation-delay: 0.3s;
-}
-.stagger-item:nth-child(2) {
-	animation-delay: 0.6s;
-}
-
-/**
-img style
- */
- article img { max-width: 4%;   }
-
- a img { max-width: 70%;   }
-
-
-/**
-ul 태그
- */
-/*ul a {*/
-/*	font-size: 15px;*/
-/*}*/
-
 
 .post-date {
 	text-transform: uppercase;
@@ -352,7 +287,7 @@ ul 태그
 
 footer {
 	padding-top: 15px;
-	font-family: 'Ubuntu';
+	font-family: 'n';
 }
 
 .sidebar-footer {
@@ -405,4 +340,8 @@ footer {
 		visibility: hidden;
 		display: none;
 	}
+
+
+
+
 }

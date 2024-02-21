@@ -18,11 +18,18 @@ email : ~~~~
 url : ~~~~   ## 로컬일 경우 http://localhost:4000 와 같이 사용하여 로컬에서 작업.
 github_username :  ~~~~
 ```
-### _config.yml
+### Gemfile
+```version 관리 파일.
+  gem "wdm", "~> 0.1.1"
+  gem "webrick", "~> 1.8" ## Ruby bundle 실행시 오류가 없도록 추가했다.
+```
 
+### Style.css
+``` 화면의 css 관리 
+   css/syntax 안에 style.css 와 custom.css 
+```
 
-
-### Screenshots
+### 기존 테마 예시 Screenshots
 #### Page
 ![alt text](/public/img/screenshot-1.png)
 #### Articles

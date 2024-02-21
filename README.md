@@ -11,11 +11,16 @@
 - Gemfile에서 gem "webrick", "~> 1.8" 을 추가해 줬다.
 
 ### _config.yml
-> Code block will look like this.
-```yml
-highlighter-theme: monokai //you can change your syntax color scheme.
-date_format: "%Y-%M-%D" //and date format.
+> Code block will look like this. 
+```yml Applicable to
+title : ~~~~
+email : ~~~~
+url : ~~~~   ## 로컬일 경우 http://localhost:4000 와 같이 사용하여 로컬에서 작업.
+github_username :  ~~~~
 ```
+### _config.yml
+
+
 
 ### Screenshots
 #### Page

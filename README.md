@@ -1,14 +1,14 @@
 
-## Theme Monos
-> Simple and lightweight theme for Jekyll
+## GitHub io 만들기.
+> 포트폴리오 용
 
-### Features
-- Responsive.
-- Syntax Highlight
-- Most optimized theme for tech blog.
-- Lightweight with minimum stylesheet.
-- Easy to customize.
-- Offers category menu.
+### 유의 사항.
+- Repository name을 name.github.io 로 만들어 준다.
+- jekyll를 통한 theme를 적용 할 수 있다.
+  - jekyll를 쓰기 위해서는 Ruby를 설치
+  - 받은 파일을 repository에 복사하여 사용.
+- _config.yml을 적절하게 변경.
+- Gemfile에서 gem "webrick", "~> 1.8" 을 추가해 줬다.
 
 ### _config.yml
 > Code block will look like this.

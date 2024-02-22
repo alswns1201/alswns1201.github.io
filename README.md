@@ -29,8 +29,8 @@ github_username :  ~~~~
    css/syntax 안에 style.css 와 custom.css 
 ```
 
-### 기존 테마 예시 Screenshots
-#### Page
+### 로컬 Git io 테스트 
+#### Start Command Prompt with Ruby  실행.
 ![alt text](/public/img/screenshot-1.png)
 #### Articles
 ![alt text](/public/img/screenshot-2.png)

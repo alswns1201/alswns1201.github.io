@@ -225,7 +225,8 @@ article h5,
 article h6 {
 	font-family: "Roboto", "Nanum Gothic";
 	color: #333;
-  	margin-bottom: 0;
+  	margin-bottom: 2%;
+	margin-top: 10%;
 }
 
 article.home h1 a,

@@ -1,7 +1,5 @@
 
-/**
-메인 화면
- */
+/*메인 화면*/
 article {
     padding: 0 5% 0;
     font-size: 17px;
@@ -10,28 +8,65 @@ article {
     /*font-family: 'Noto Sans Korean', sans-serif;*/
 }
 
-/**
-about Me에 있는 사진
-사이드 바에 있는 a태그 사진
- */
+/*메인 이미지 로고*/
 article img { max-width: 4%;   }
+
+/*header 밑줄.*/
+.post-header {
+    border-bottom: 1px solid #ccc;
+
+}
+
+/*타이틀 애니매이션 */
+@keyframes showItem {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+        color: rgb(0, 204, 255);
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 2;
+    }
+}
+
+.stagger-item {
+    animation: showItem 1.0s;
+    animation-fill-mode: both;
+}
+.stagger-item:nth-child(1) {
+    animation-delay: 0.3s;
+}
+.stagger-item:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+/*left 영역*/
+.left {
+    width: 40%; float: left; margin-top: 2%;
+}
+.right {
+   width: 60%; float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 a img { max-width: 70%;   }
 
 li a img {max-width: 10%}
 
-/**
-title 스타일
- */
-
-.title-style {
-    /*font-family: 'Noto Sans Korean', sans-serif;*/
-    letter-spacing: -1px;
-    /*font-weight: bold;*/
-    font-size: 23px;
-    color: #0e84b5;
-    border-bottom: 1px solid #ccc;
-}
 
 /**
 title 앞에 형광색 표시 적용 하기.
@@ -68,42 +103,6 @@ title 앞에 형광색 표시 적용 하기.
 }
 
 
-/**
-   타이틀 애니매이션
- */
-@keyframes showItem {
-    from {
-        transform: translateY(100px);
-        opacity: 0;
-        color: rgb(0, 204, 255);
-    }
 
-    to {
-        transform: translateY(0px);
-        opacity: 2;
-    }
-}
 
-.stagger-item {
-    animation: showItem 1.0s;
-    animation-fill-mode: both;
-}
-.stagger-item:nth-child(1) {
-    animation-delay: 0.3s;
-}
-.stagger-item:nth-child(2) {
-    animation-delay: 0.6s;
-}
-
-/**
- 인용글
- */
-Customblockquote {
-    margin: 0;
-}
-
-Customblockquote li {
-    padding: 6px;
-    background: #eee;
-}
 

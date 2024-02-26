@@ -85,9 +85,31 @@ mark {
 }
 
 
+/*Project 내용*/
+.contents {
+    width: 100%;
+    /*height: 420px;*/
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+}
 
+.p1 {
+    width: 20%;
+    /*background-color: #F5B894;*/
+    padding: 20px;
+    overflow: auto;
+    padding-top: 0;
+}
 
-
+.p2 {
+    width: 80%;
+    /*background-color: #F5DBB1;*/
+    padding: 20px;
+    overflow: auto;
+    padding-top: 0;
+}
 
 
 

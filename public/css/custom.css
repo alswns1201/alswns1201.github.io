@@ -15,7 +15,7 @@ h3 img { max-width: 4%;   }
 /* 이미지 크기*/
 a img { max-width: 70%;   }
 li a img {max-width: 10%}
-.left img {max-width: 100%}
+.left img {max-width: 8%}
 
 /*header 밑줄.*/
 .post-header {
@@ -133,7 +133,14 @@ title 앞에 형광색 표시 적용 하기.
     left: 0;
 }
 
+hr {
 
+    border: none;
+    border-top: 3px dotted #bbbbbb;
+    height: 1px;
+    width: 100%;
+
+}
 
 
 

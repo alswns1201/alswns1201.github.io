@@ -25,3 +25,6 @@ exclude:
   - posts_meta.tsv
   - PROGRESS.md
   - CLAUDE.md
+  - vendor
+  - Gemfile
+  - Gemfile.lock

@@ -1,6 +1,8 @@
 title: 코딩하는 기록러
 description: 개발 기록 블로그 (Tistory에서 이관)
 author: alswns1201
+repository: alswns1201/alswns1201.github.io
+url: "https://alswns1201.github.io"
 
 theme: minima
 minima:

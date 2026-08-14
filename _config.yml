@@ -1,0 +1,27 @@
+title: 코딩하는 기록러
+description: 개발 기록 블로그 (Tistory에서 이관)
+author: alswns1201
+
+theme: minima
+minima:
+  skin: auto
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+permalink: /:year/:month/:day/:title/
+
+show_excerpts: true
+
+exclude:
+  - post_ids.txt
+  - posts_meta.tsv
+  - PROGRESS.md
+  - CLAUDE.md

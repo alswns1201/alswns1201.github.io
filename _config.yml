@@ -30,3 +30,5 @@ exclude:
   - vendor
   - Gemfile
   - Gemfile.lock
+  - _raw
+  - _drafts_review

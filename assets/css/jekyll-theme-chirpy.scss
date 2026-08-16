@@ -1,0 +1,52 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}',
+  $font-family-base: -apple-system, BlinkMacSystemFont, 'Pretendard', 'Apple SD Gothic Neo',
+    'Malgun Gothic', 'Segoe UI', Roboto, sans-serif,
+  $font-family-heading: -apple-system, BlinkMacSystemFont, 'Pretendard', 'Apple SD Gothic Neo',
+    'Malgun Gothic', 'Segoe UI', Roboto, sans-serif
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* append your custom style below */
+
+/* Accent color: teal instead of Chirpy's default blue */
+:root[data-bs-theme='light'] {
+  --link-color: #0f766e;
+  --toc-highlight: #0f766e;
+  --checkbox-checked-color: #0f766e;
+  --btn-share-hover-color: #0f766e;
+}
+
+:root[data-bs-theme='dark'] {
+  --link-color: #5eead4;
+  --toc-highlight: #5eead4;
+  --checkbox-checked-color: #5eead4;
+  --btn-share-hover-color: #5eead4;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-bs-theme]) {
+    --link-color: #0f766e;
+    --toc-highlight: #0f766e;
+    --checkbox-checked-color: #0f766e;
+    --btn-share-hover-color: #0f766e;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-bs-theme]) {
+    --link-color: #5eead4;
+    --toc-highlight: #5eead4;
+    --checkbox-checked-color: #5eead4;
+    --btn-share-hover-color: #5eead4;
+  }
+}

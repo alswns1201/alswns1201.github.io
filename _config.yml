@@ -1,26 +1,133 @@
+# The Site Configuration
+
+theme: jekyll-theme-chirpy
+
+lang: ko
+
+timezone: Asia/Seoul
+
+# jekyll-seo-tag settings › http://www.lingoes.net/en/translator/langcode.htm
+# ↓ --------------------------
+
 title: 코딩하는 기록러
-description: 개발 기록 블로그 (Tistory에서 이관)
-author: alswns1201
-repository: alswns1201/alswns1201.github.io
+
+tagline: 왜 그런지까지 파고드는 개발 기록
+
+description: >-
+  Java/Spring 백엔드 개발자 alswns1201의 학습 기록.
+  설계 판단, 트레이드오프, 그리고 흔히 놓치는 지점들을 정리합니다.
+
 url: "https://alswns1201.github.io"
 
-theme: minima
-minima:
-  skin: auto
+github:
+  username: alswns1201
 
-markdown: kramdown
+twitter:
+  username:
+
+social:
+  name: alswns1201
+  email: alswns1201@gmail.com
+  fediverse_handle:
+  links:
+    - https://github.com/alswns1201
+
+webmaster_verifications:
+  google:
+  bing:
+  alexa:
+  yandex:
+  baidu:
+  facebook:
+
+# ↑ --------------------------
+# The end of `jekyll-seo-tag` settings
+
+analytics:
+  google:
+    id:
+  goatcounter:
+    id:
+  umami:
+    id:
+    domain:
+  matomo:
+    id:
+    domain:
+  cloudflare:
+    id:
+  fathom:
+    id:
+
+pageviews:
+  provider:
+
+theme_mode:
+
+cdn:
+
+avatar:
+
+social_preview_image:
+
+toc: true
+
+actions:
+  edit_post:
+    enabled: false
+    url: ""
+    static_url: false
+
+comments:
+  provider:
+  disqus:
+    shortname:
+  utterances:
+    repo:
+    issue_term:
+  giscus:
+    repo:
+    repo_id:
+    category:
+    category_id:
+    mapping:
+    strict:
+    input_position:
+    lang:
+    reactions_enabled:
+
+assets:
+  self_host:
+    enabled:
+    env:
+
+pwa:
+  enabled: true
+  cache:
+    enabled: true
+    deny_paths:
+
+paginate: 10
+
+baseurl: ""
+
+# ------------ The following options are not recommended to be modified ------------------
+
 kramdown:
-  input: GFM
+  footnote_backlink: "&#8617;&#xfe0e;"
   syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-permalink: /:year/:month/:day/:title/
-
-show_excerpts: true
+collections:
+  tabs:
+    output: true
+    sort_by: order
 
 defaults:
   - scope:
@@ -28,14 +135,56 @@ defaults:
       type: posts
     values:
       layout: post
+      comments: true
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
 
 exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - purgecss.js
+  - "*.config.js"
+  - "package*.json"
   - post_ids.txt
   - posts_meta.tsv
   - PROGRESS.md
   - CLAUDE.md
   - vendor
-  - Gemfile
   - Gemfile.lock
   - _raw
   - _drafts_review
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/

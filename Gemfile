@@ -1,8 +1,5 @@
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins
-gem "jekyll-feed"
-gem "jekyll-seo-tag"
-gem "jekyll-sitemap"
+gem "jekyll-theme-chirpy", "~> 7.6"
 
 gem "webrick", "~> 1.8"

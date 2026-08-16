@@ -124,6 +124,13 @@ kramdown:
       line_numbers: true
       start_line: 1
 
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-sitemap
+  - jekyll-include-cache
+
 collections:
   tabs:
     output: true

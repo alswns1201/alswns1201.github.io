@@ -22,6 +22,13 @@ permalink: /:year/:month/:day/:title/
 
 show_excerpts: true
 
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
 exclude:
   - post_ids.txt
   - posts_meta.tsv

@@ -60,6 +60,22 @@
 - [ ] 사용자가 라이브 사이트에서 5개 확인 → 스타일/톤 최종 승인
 - [ ] 승인되면 나머지 ~96개도 같은 방식(소수 배치 → 푸시 → 확인)으로 이어서 진행
 
+## 디자인 변경 (2026-08-16)
+사용자가 https://jeonje.github.io/about/ (Chirpy 테마) 느낌을 원하되 완전히 똑같지는 않게 요청.
+minima → **jekyll-theme-chirpy**(~> 7.6)로 테마 교체, 색상/폰트/카피만 커스터마이징:
+- `Gemfile`: `github-pages` 대신 `jekyll-theme-chirpy` gem 직접 사용 (기존 Actions 빌드 방식과 호환, 별도 워크플로 수정 불필요)
+- `_config.yml`: chirpy-starter 기준으로 전체 재작성. title/tagline/description/social 등 우리 값으로 채움.
+  글 permalink를 `/:year/:month/:day/:title/` → chirpy 권장 `/posts/:title/`로 변경 (사이트가 아직 새것이라 지금 바꾸는 비용이 낮음).
+- `_tabs/` 추가 (about, archives, categories, tags) — chirpy가 요구하는 콜렉션. about.md는 확실한 사실만으로 작성
+  (경력/이름 등은 지어내지 않음 — 사용자가 직접 채워도 됨).
+- `assets/css/jekyll-theme-chirpy.scss` 추가— 테마 오버라이드 진입점. 기본 파란색 accent를
+  teal(`#0f766e` light / `#5eead4` dark)로 변경, 폰트를 한글 친화적 시스템 폰트 스택으로 변경.
+  사이드바 구조/레이아웃 자체는 그대로 사용 (색/폰트/카피만 다르다는 원칙).
+- 아바타 이미지는 아직 없음 (`avatar:` 비워둠) — 필요하면 사용자가 사진 추가.
+- 로컬 Ruby가 2.6이라 chirpy(Ruby≥3.1 필요) 로컬 빌드 불가 → GitHub Actions(Ruby 3.3)에서 검증.
+  Sass 문법 오류 1회 발생(`with()` 안 폰트 리스트에 괄호 누락) → 즉시 수정 후 재푸시, 빌드/배포 성공 확인.
+- 배포 확인 완료: https://alswns1201.github.io (사이드바/about/categories/글 permalink 모두 200 응답 확인)
+
 ## 진행 상황 (2026-08-15 세션)
 - [x] 전체 104개 글 원문 스크래핑 완료 → `_raw/bodies_md/{id}.md` (html2text로 1차 변환,
   Jekyll 빌드에서 제외되도록 `_config.yml`에 등록됨). 원본 HTML도 스크래치패드에 있었으나

@@ -3,12 +3,33 @@ title: "이벤트 소싱: '새 이벤트 없이 상태가 바뀌는' 도메인�
 date: 2026-08-17
 categories: [아키텍쳐 설계 관련 글]
 tags: [database, architecture, spring-boot]
+mermaid: true
 ---
 
 **이벤트 소싱**은 "지금 상태"를 저장하는 대신 "무슨 일이 있었는지"를 순서대로
 저장하는 방식이다. 상태가 필요하면 그 기록들을 처음부터 순서대로 다시 재생해서
 계산한다. 정의만 보면 추상적인데, [유효기간이 있는 적립금(포인트)](https://github.com/alswns1201/event-sourcing-practice)
 하나만 놓고 보면 왜 이런 방식이 필요한지 바로 감이 온다.
+
+전체 흐름을 그림으로 먼저 보면, 아래에서 다룰 개념들이 각각 어디 있는지 잡기 쉽다.
+
+```mermaid
+flowchart LR
+    Client([Client])
+
+    Client -- "Command: earn / redeem" --> Handler["Command Handler<br/>RewardCommandService"]
+    Handler -- "Load" --> Aggregate["Aggregate<br/>RewardAccount"]
+    Aggregate -- "Emit Event" --> Store[("Event Store<br/>stored_event")]
+    Store -- "Project" --> ReadModel[("Read Model<br/>reward_batch_summary")]
+
+    Client -- "Query: balance<br/>지금·미래만 정확, 빠름" --> ReadModel
+    Client -- "Query: historical-balance<br/>과거도 정확, 느림" --> Replay["Replay"]
+    Replay --> Store
+```
+
+왼쪽 아래(Command)가 "무슨 일이 있었는지 기록하는" 경로고, 오른쪽(Query)이 그
+기록을 바탕으로 "지금 상태가 뭔지 답하는" 경로다. 이 둘이 갈라져 있다는 것 자체가
+이벤트 소싱 + CQRS의 핵심 구조다 — 아래에서 하나씩 풀어본다.
 
 ## 예제: 적립금이 저절로 줄어드는 상황
 

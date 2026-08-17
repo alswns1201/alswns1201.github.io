@@ -108,6 +108,22 @@ minima → **jekyll-theme-chirpy**(~> 7.6)로 테마 교체, 색상/폰트/카�
   76(Kafka Spring 서비스 적용)은 기존 Kafka producer/consumer 글들과 내용이 겹칠
   수 있어 보여서, 다룰 때 중복 여부를 먼저 확인할 것.
 
+## 진행 상황 (2026-08-17 세션)
+- 2개 더 `_posts/`로 승격 및 푸시:
+  - `2026-04-23-elasticsearch-java-typesafe-client.md` (id 89): RestTemplate+Map
+    조립 방식 → elasticsearch-java 8.x 전환. httpclient4/5 혼용 SSL 설정 버그,
+    제네릭 타입 소거 때문에 `Map<String,Object>.class`가 안 되는 문제 — 둘 다
+    원문에 있던 실제 디버깅 내용.
+  - `2026-05-19-skill-prompt-tool-use-mcp.md` (id 102): Skill Prompt/Tool
+    Use/MCP 세 가지 LLM 확장 방식 비교. 원문 품질이 좋아서 거의 그대로 정리.
+- **id 86(IntelliJ에 Claude Code 연동 가이드)은 의도적으로 건너뜀** — 원문에
+  MCP와 Claude Code 기본 도구 접근(셸/파일 access)을 혼동한 서술이 있고,
+  "Antigravity"(구글 툴)를 Claude Code 설치 경로처럼 언급하는 등 원문 자체의
+  기술적 정확성이 의심스러움. CLAUDE.md 원칙(사실관계 임의 창작 금지)과
+  충돌해서, 단순 재구성으로 해결이 안 됨 — 원문을 그대로 살릴지, 정정해서
+  올릴지 사용자 확인이 먼저 필요함.
+- 남은 후보: 76, 81, 97, 105 (미착수).
+
 ## 메모
 - 스크래핑한 원본 메타/본문은 세션 스크래치패드(`/private/tmp/...`)에 임시로 두고 있음.
   세션이 끊기면 이 폴더에 최종본만 남기고 스크래치패드 내용은 사라질 수 있으니,

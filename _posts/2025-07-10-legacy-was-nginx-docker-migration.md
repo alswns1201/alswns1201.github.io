@@ -1,7 +1,7 @@
 ---
 title: "레거시 WAS & Nginx를 Docker로 현대화하기: 마이그레이션 A to Z 가이드"
 date: 2025-07-10
-categories: [아키텍쳐 설계 관련 글, 서버,인프라]
+categories: [인프라]
 tags: [docker, devops, architecture]
 ---
 

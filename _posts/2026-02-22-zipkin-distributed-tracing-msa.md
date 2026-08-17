@@ -1,7 +1,7 @@
 ---
 title: "MSA에서 traceId가 끊기는 이유 — Zipkin 분산 트레이싱과 Feign의 함정"
 date: 2026-02-22
-categories: [MSA]
+categories: [아키텍처]
 tags: [msa, spring-boot, monitoring]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "재시도와 복원력 패턴: Timeout → Retry → CircuitBreaker → Fallback 조합 순서"
 date: 2026-08-16
-categories: [개발일지, SPRINGBOOT]
+categories: [Spring Boot]
 tags: [spring-boot, resilience4j, architecture]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "RAG 실전: 청킹 전략, 하이브리드 서치, 그리고 Reranker"
 date: 2026-05-10
-categories: [AI, RAG 개념]
+categories: [AI]
 tags: [ai, rag, llm]
 ---
 

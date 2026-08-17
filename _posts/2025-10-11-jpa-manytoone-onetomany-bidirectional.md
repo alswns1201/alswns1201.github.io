@@ -1,7 +1,7 @@
 ---
 title: "JPA @ManyToOne과 @OneToMany, 그리고 양방향 매핑의 진짜 함정"
 date: 2025-10-11
-categories: [개발일지, SPRINGBOOT]
+categories: [Spring Boot]
 tags: [spring-boot, jpa]
 ---
 

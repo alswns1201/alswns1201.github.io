@@ -1,7 +1,7 @@
 ---
 title: "Spring Security + JWT 토큰 기반 인증 구축하기"
 date: 2025-06-08
-categories: [개발일지, JWT]
+categories: [Spring Boot]
 tags: [spring-security, jwt, authentication]
 ---
 

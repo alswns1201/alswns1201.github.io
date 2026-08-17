@@ -1,7 +1,7 @@
 ---
 title: "Kafka Connect JDBC Sink Connector로 DB 간 데이터 동기화하기"
 date: 2026-02-14
-categories: [개발일지, Kafka]
+categories: [Kafka]
 tags: [kafka, database, devops]
 ---
 

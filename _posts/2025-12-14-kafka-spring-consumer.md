@@ -1,7 +1,7 @@
 ---
 title: "Kafka로 메시지 큐 다루기 (4) — Spring Boot 컨슈머 연동"
 date: 2025-12-14
-categories: [개발일지, Kafka]
+categories: [Kafka]
 tags: [kafka, spring-boot]
 ---
 

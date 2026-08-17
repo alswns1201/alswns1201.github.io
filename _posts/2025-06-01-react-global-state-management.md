@@ -1,7 +1,7 @@
 ---
 title: "React 전역 상태 관리: Context가 언제 부족해지는가"
 date: 2025-06-01
-categories: [프론트 화면 관련 글, React]
+categories: [프론트엔드]
 tags: [react, frontend, state-management]
 ---
 

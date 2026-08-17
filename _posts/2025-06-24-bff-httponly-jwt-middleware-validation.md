@@ -1,7 +1,7 @@
 ---
 title: "BFF에서 httpOnly JWT를 미들웨어가 '진짜' 검증하게 만들기"
 date: 2025-06-24
-categories: [아키텍쳐 설계 관련 글, BFF]
+categories: [아키텍처]
 tags: [spring-security, jwt, bff]
 ---
 

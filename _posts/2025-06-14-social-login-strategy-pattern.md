@@ -1,7 +1,7 @@
 ---
 title: "전략 패턴으로 카카오·네이버·구글 소셜 로그인 유연하게 구현하기"
 date: 2025-06-14
-categories: [개발일지, SPRINGBOOT]
+categories: [Spring Boot]
 tags: [spring-boot, architecture, spring-security]
 ---
 

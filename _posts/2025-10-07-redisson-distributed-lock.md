@@ -1,7 +1,7 @@
 ---
 title: "Redisson으로 분산 락 다루기: tryLock의 함정"
 date: 2025-10-07
-categories: [개발일지, Redis]
+categories: [아키텍처]
 tags: [redis, concurrency, distributed-lock]
 ---
 

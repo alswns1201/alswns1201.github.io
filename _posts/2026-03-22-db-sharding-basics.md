@@ -1,7 +1,7 @@
 ---
 title: "데이터베이스 분산과 샤딩 개념"
 date: 2026-03-22
-categories: ["아키텍쳐 설계 관련 글"]
+categories: [아키텍처]
 tags: [database, architecture, msa]
 ---
 

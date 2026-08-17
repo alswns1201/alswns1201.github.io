@@ -1,7 +1,7 @@
 ---
 title: "localStorage와 sessionStorage, 그리고 둘 다 인증 토큰을 두면 안 되는 이유"
 date: 2025-06-16
-categories: [프론트 화면 관련 글, html]
+categories: [프론트엔드]
 tags: [frontend, security]
 ---
 

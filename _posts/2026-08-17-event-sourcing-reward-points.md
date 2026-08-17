@@ -1,7 +1,7 @@
 ---
 title: "이벤트 소싱: '새 이벤트 없이 상태가 바뀌는' 도메인이 진짜 필요로 하는 이유"
 date: 2026-08-17
-categories: [아키텍쳐 설계 관련 글]
+categories: [아키텍처]
 tags: [database, architecture, spring-boot]
 mermaid: true
 ---

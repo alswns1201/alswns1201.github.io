@@ -1,7 +1,7 @@
 ---
 title: "단위 테스트 vs 통합 테스트, 언제 무엇을 써야 할까? (feat. AssertJ)"
 date: 2025-06-15
-categories: [개발일지, TDD]
+categories: [테스트]
 tags: [testing, tdd, spring-boot]
 ---
 

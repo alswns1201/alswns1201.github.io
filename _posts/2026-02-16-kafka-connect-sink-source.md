@@ -1,7 +1,7 @@
 ---
 title: "Kafka Connect로 애플리케이션 코드 없이 DB에 데이터 적재하기"
 date: 2026-02-16
-categories: [개발일지, Kafka]
+categories: [Kafka]
 tags: [kafka, msa, database]
 ---
 

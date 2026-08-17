@@ -1,7 +1,7 @@
 ---
 title: "React 자식 컴포넌트 제어: forwardRef와 useImperativeHandle"
 date: 2025-05-29
-categories: [프론트 화면 관련 글, React]
+categories: [프론트엔드]
 tags: [react, frontend]
 ---
 

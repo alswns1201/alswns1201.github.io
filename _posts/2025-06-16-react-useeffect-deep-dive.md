@@ -1,7 +1,7 @@
 ---
 title: "React useEffect의 모든 것"
 date: 2025-06-16
-categories: [프론트 화면 관련 글, React]
+categories: [프론트엔드]
 tags: [react, frontend]
 ---
 

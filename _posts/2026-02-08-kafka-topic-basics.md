@@ -1,7 +1,7 @@
 ---
 title: "Docker로 Kafka 토픽 만들어보기 — 그리고 파티션 개수를 신중하게 정해야 하는 이유"
 date: 2026-02-08
-categories: [개발일지, Kafka]
+categories: [Kafka]
 tags: [kafka, docker]
 ---
 

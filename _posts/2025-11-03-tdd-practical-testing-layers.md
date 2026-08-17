@@ -1,7 +1,7 @@
 ---
 title: "TDD, Service만이 아니라 Controller와 외부 API까지 테스트로 감싸는 법"
 date: 2025-11-03
-categories: [개발일지, TDD]
+categories: [테스트]
 tags: [testing, tdd, spring-boot]
 ---
 

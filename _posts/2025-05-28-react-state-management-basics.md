@@ -1,7 +1,7 @@
 ---
 title: "React 상태 관리: useState 하나로 언제까지 버틸 수 있는가"
 date: 2025-05-28
-categories: [프론트 화면 관련 글, React]
+categories: [프론트엔드]
 tags: [react, frontend]
 ---
 

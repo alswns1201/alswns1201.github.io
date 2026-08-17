@@ -1,7 +1,7 @@
 ---
 title: "@Bean, @Component vs @Configuration: 빈 등록 방식의 차이와 함정"
 date: 2025-05-23
-categories: [개발일지, "JAVA,SPRING"]
+categories: [Spring Boot]
 tags: [spring-boot, java, architecture]
 ---
 

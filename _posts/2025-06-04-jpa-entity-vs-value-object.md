@@ -1,7 +1,7 @@
 ---
 title: "JPA 엔티티와 값 객체 — 무엇이 다르고, 언제 무엇을 쓸까"
 date: 2025-06-04
-categories: [개발일지, SPRINGBOOT]
+categories: [Spring Boot]
 tags: [jpa, spring-boot, java]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "React Query useQuery로 서버 상태 관리하기: 캐싱이 실제로 하는 일"
 date: 2025-06-02
-categories: [프론트 화면 관련 글, React]
+categories: [프론트엔드]
 tags: [react, frontend, react-query]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Spring Boot + Quartz Scheduler: @Scheduled로는 안 되는 지점"
 date: 2025-10-04
-categories: [개발일지, Quartz]
+categories: [Spring Boot]
 tags: [spring-boot, devops]
 ---
 

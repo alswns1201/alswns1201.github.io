@@ -1,7 +1,7 @@
 ---
 title: "kind로 로컬 쿠버네티스 클러스터 띄우고 Spring Boot 앱 배포하기"
 date: 2026-04-30
-categories: [MSA, 쿠버네티스]
+categories: [인프라]
 tags: [kubernetes, docker, devops]
 ---
 

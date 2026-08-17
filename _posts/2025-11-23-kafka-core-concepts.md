@@ -1,7 +1,7 @@
 ---
 title: "Kafka 핵심 개념: Producer, Topic, Consumer, 그리고 오프셋"
 date: 2025-11-23
-categories: [개발일지, Kafka]
+categories: [Kafka]
 tags: [kafka, msa, architecture]
 ---
 

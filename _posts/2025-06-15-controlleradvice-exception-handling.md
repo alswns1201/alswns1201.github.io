@@ -1,7 +1,7 @@
 ---
 title: "try-catch 지옥에서 벗어나기: @ControllerAdvice로 우아하게 예외 처리하기"
 date: 2025-06-15
-categories: [개발일지, 예외처리]
+categories: [Spring Boot]
 tags: [spring-boot, architecture]
 ---
 

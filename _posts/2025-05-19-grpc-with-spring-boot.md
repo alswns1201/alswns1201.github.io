@@ -1,7 +1,7 @@
 ---
 title: "gRPC, REST 대신 선택하는 기준 (with Spring Boot)"
 date: 2025-05-19
-categories: [개발일지, 데이터 통신]
+categories: [Spring Boot]
 tags: [grpc, spring-boot, api-design]
 ---
 

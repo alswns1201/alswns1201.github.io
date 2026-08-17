@@ -1,7 +1,7 @@
 ---
 title: "Spring Security 필터 기반 인증 직접 구현하기 — 그리고 이 방식의 함정들"
 date: 2026-01-21
-categories: [개발일지, SpringSecurity]
+categories: [Spring Boot]
 tags: [spring-security, jwt, spring-boot]
 ---
 

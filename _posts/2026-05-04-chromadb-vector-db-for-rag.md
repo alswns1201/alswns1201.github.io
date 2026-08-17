@@ -1,7 +1,7 @@
 ---
 title: "벡터 DB는 왜 필요한가 — ChromaDB로 보는 임베딩 검색의 실체"
 date: 2026-05-04
-categories: [AI, "RAG 개념"]
+categories: [AI]
 tags: [ai, rag, vector-db]
 ---
 

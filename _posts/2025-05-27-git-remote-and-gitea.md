@@ -1,7 +1,7 @@
 ---
 title: "원격 저장소는 왜 필요한가 — 그리고 GitHub 대신 Gitea를 쓸지 판단하는 기준"
 date: 2025-05-27
-categories: [아키텍쳐 설계 관련 글, 서버,인프라]
+categories: [인프라]
 tags: [devops, architecture]
 ---
 

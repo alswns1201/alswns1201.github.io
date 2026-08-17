@@ -1,7 +1,7 @@
 ---
 title: "JPA 값 객체(Value Object)와 N+1 — @BatchSize vs Fetch Join, 언제 무엇을 쓸까"
 date: 2025-05-18
-categories: [개발일지, SPRINGBOOT]
+categories: [Spring Boot]
 tags: [spring-boot, jpa]
 ---
 

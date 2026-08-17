@@ -1,7 +1,7 @@
 ---
 title: "카프카 내부 구조와 데이터 가용성 메커니즘의 이해"
 date: 2026-04-29
-categories: [개발일지, Kafka]
+categories: [Kafka]
 tags: [kafka, msa, architecture]
 ---
 

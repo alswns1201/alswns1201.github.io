@@ -1,7 +1,7 @@
 ---
 title: "JPA 도메인 설계, 요구사항부터 테스트까지의 사고 흐름"
 date: 2025-07-01
-categories: [개발일지, SPRINGBOOT]
+categories: [Spring Boot]
 tags: [spring-boot, jpa, architecture]
 ---
 

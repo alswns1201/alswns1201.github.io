@@ -1,7 +1,7 @@
 ---
 title: "Spring Boot에서 record를 DTO로 쓰기: 왜 잘 맞고, 왜 Entity에는 못 쓰는가"
 date: 2025-12-16
-categories: [개발일지, SPRINGBOOT]
+categories: [Spring Boot]
 tags: [java, spring-boot, jpa]
 ---
 

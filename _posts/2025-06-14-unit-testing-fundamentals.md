@@ -1,7 +1,7 @@
 ---
 title: "\"이거 당연히 성공하는 거 아니야?\" — 단위 테스트가 실제로 증명하는 것"
 date: 2025-06-14
-categories: [개발일지, TDD]
+categories: [테스트]
 tags: [testing, tdd, spring-boot]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "JWT 인증에서 401과 403을 정확히 나누는 법 — EntryPoint vs AccessDeniedHandler"
 date: 2025-12-15
-categories: [개발일지, SpringSecurity]
+categories: [Spring Boot]
 tags: [spring-security, jwt]
 ---
 

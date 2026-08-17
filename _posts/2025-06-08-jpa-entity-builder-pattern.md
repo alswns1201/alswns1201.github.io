@@ -1,7 +1,7 @@
 ---
 title: "빌더 패턴으로 JPA 엔터티 안전하게 생성하기"
 date: 2025-06-08
-categories: [개발일지, SPRINGBOOT]
+categories: [Spring Boot]
 tags: [jpa, spring-boot, java]
 ---
 

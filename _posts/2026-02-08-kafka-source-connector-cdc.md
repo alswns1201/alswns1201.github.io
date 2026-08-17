@@ -1,7 +1,7 @@
 ---
 title: "Kafka Connect로 DB 변경사항 스트리밍하기: JDBC Source vs CDC"
 date: 2026-02-08
-categories: [개발일지, Kafka]
+categories: [Kafka]
 tags: [kafka, database, cdc]
 ---
 

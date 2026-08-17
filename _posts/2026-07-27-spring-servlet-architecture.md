@@ -1,7 +1,7 @@
 ---
 title: "Spring Boot 서블릿 아키텍처: Filter Chain부터 DispatcherServlet까지"
 date: 2026-07-27
-categories: [개발일지, SPRINGBOOT]
+categories: [Spring Boot]
 tags: [spring-boot, architecture]
 ---
 

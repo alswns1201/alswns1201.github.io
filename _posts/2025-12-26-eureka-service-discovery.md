@@ -1,7 +1,7 @@
 ---
 title: "Spring Cloud Eureka로 보는 서비스 디스커버리"
 date: 2025-12-26
-categories: [MSA, 유레카]
+categories: [아키텍처]
 tags: [msa, spring-boot, service-discovery]
 ---
 

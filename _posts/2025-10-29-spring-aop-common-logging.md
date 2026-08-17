@@ -1,7 +1,7 @@
 ---
 title: "Spring AOP로 Controller/Service 공통 로깅 구현하기"
 date: 2025-10-29
-categories: [개발일지, 로깅]
+categories: [Spring Boot]
 tags: [spring-boot, monitoring, architecture]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "JPA 데이터 조회 전략 4가지: 언제 무엇을 써야 하는가"
 date: 2025-05-13
-categories: [개발일지, SPRINGBOOT]
+categories: [Spring Boot]
 ---
 
 Spring Data JPA로 데이터를 조회하는 방법은 하나가 아니다. 기본 메소드, 쿼리 메소드,

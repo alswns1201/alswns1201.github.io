@@ -1,7 +1,7 @@
 ---
 title: "@Async 예외가 조용히 사라지는 이유와 AsyncUncaughtExceptionHandler"
 date: 2025-12-09
-categories: [개발일지, 예외처리]
+categories: [Spring Boot]
 tags: [spring-boot, java, exception-handling]
 ---
 

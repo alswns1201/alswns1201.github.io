@@ -1,7 +1,7 @@
 ---
 title: "MariaDB와 Elasticsearch를 다른 서버로 옮기기: 이관 절차와 그 이유"
 date: 2025-07-05
-categories: [아키텍쳐 설계 관련 글, 서버,인프라]
+categories: [인프라]
 tags: [database, devops, architecture]
 ---
 

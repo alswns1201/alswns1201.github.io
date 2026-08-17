@@ -1,6 +1,7 @@
 ---
 title: "대용량 페이지네이션 API를 안전하게 순회하며 적재하기"
 date: 2026-07-28
+categories: [아키텍처]
 tags: [java, api-design, architecture]
 ---
 

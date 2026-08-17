@@ -1,7 +1,7 @@
 ---
 title: "BFF(Backend for Frontend) 아키텍처, 언제 필요하고 언제 과한가"
 date: 2025-06-23
-categories: [아키텍쳐 설계 관련 글, BFF]
+categories: [아키텍처]
 tags: [architecture, api-design, msa]
 ---
 

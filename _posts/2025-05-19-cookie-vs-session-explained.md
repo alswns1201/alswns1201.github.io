@@ -1,7 +1,7 @@
 ---
 title: "쿠키 vs 세션: HTTP가 상태를 기억 못 해서 생긴 개념들"
 date: 2025-05-19
-categories: [개발일지, "JAVA,SPRING"]
+categories: [Spring Boot]
 tags: [spring-boot, java, cookie-session]
 ---
 

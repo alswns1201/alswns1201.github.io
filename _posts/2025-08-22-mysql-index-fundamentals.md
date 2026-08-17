@@ -1,7 +1,7 @@
 ---
 title: "데이터베이스 인덱스, 제대로 알고 썼더니 빛이 났다 (Feat. MySQL users 테이블)"
 date: 2025-08-22
-categories: ["아키텍쳐 설계 관련 글"]
+categories: [아키텍처]
 tags: [database, mysql, index]
 ---
 

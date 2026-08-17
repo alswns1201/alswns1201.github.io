@@ -1,7 +1,7 @@
 ---
 title: "Java 접근 제어자(private / default / protected / public) 완전 정리"
 date: 2025-12-12
-categories: [개발일지, "JAVA,SPRING"]
+categories: [Spring Boot]
 tags: [java, architecture]
 ---
 

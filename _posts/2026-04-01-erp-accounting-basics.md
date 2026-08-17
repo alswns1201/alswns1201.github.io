@@ -1,7 +1,7 @@
 ---
 title: "ERP 개발을 위한 회계 기본기: 전표, 전기, 역분개"
 date: 2026-04-01
-categories: [ERP]
+categories: [아키텍처]
 tags: [architecture, database]
 ---
 

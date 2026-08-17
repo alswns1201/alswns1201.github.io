@@ -1,7 +1,7 @@
 ---
 title: "동기/비동기, 블로킹/논블로킹 — Spring에서 별도 Thread Pool을 두는 이유"
 date: 2025-10-07
-categories: [개발일지, 동기 비동기]
+categories: [Spring Boot]
 tags: [java, spring-boot, redis]
 ---
 

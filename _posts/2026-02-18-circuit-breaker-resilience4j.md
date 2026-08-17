@@ -1,7 +1,7 @@
 ---
 title: "CircuitBreaker로 장애 전파 막기 - Resilience4j"
 date: 2026-02-18
-categories: [MSA]
+categories: [아키텍처]
 tags: [msa, resilience4j, architecture]
 ---
 

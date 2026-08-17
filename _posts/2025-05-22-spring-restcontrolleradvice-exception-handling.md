@@ -1,7 +1,7 @@
 ---
 title: "Spring 예외 처리: @ExceptionHandler와 @RestControllerAdvice 제대로 나누기"
 date: 2025-05-22
-categories: [개발일지, 예외처리]
+categories: [Spring Boot]
 tags: [spring-boot, exception-handling, java]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Kafka는 왜 Zookeeper를 버렸는가 — Zookeeper 모드 vs KRaft 모드"
 date: 2026-04-26
-categories: [개발일지, Kafka]
+categories: [Kafka]
 tags: [kafka, msa, architecture]
 ---
 

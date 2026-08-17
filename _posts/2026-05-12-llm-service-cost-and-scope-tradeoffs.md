@@ -1,7 +1,7 @@
 ---
 title: "LLM 사용 서비스, 실제로 상용화하려면 고려해야 하는 것들"
 date: 2026-05-12
-categories: [AI, AI 서비스 개발기]
+categories: [AI]
 tags: [ai, llm, architecture]
 ---
 

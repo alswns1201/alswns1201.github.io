@@ -1,7 +1,7 @@
 ---
 title: "Spring WebClient로 외부 API 로그 분리하기"
 date: 2025-12-17
-categories: [개발일지, 로깅]
+categories: [Spring Boot]
 tags: [spring-boot, logging, webclient]
 ---
 

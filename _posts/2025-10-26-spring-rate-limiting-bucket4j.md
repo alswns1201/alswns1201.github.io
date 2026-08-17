@@ -1,7 +1,7 @@
 ---
 title: "Spring Boot에서 Bucket4j로 API 요청 제한(Rate Limiting) 구현하기"
 date: 2025-10-26
-categories: [개발일지, 요청수제한]
+categories: [Spring Boot]
 tags: [spring-boot, api-design, architecture]
 ---
 

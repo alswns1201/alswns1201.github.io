@@ -1,7 +1,7 @@
 ---
 title: "Prometheus + Grafana로 Spring Boot 모니터링 구축하기"
 date: 2026-03-28
-categories: [아키텍쳐 설계 관련 글, 그라파나 (Grafana)]
+categories: [인프라]
 tags: [spring-boot, monitoring, docker, msa]
 ---
 

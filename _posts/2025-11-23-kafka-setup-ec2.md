@@ -1,7 +1,7 @@
 ---
 title: "AWS EC2 프리티어에 Kafka 설치하기, 그리고 이 구성이 왜 개발용일 수밖에 없는가"
 date: 2025-11-23
-categories: [개발일지, Kafka]
+categories: [Kafka]
 tags: [kafka, devops]
 ---
 

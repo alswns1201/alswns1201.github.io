@@ -1,7 +1,7 @@
 ---
 title: "Spring에서 공통 로그 처리: Filter vs AOP"
 date: 2025-10-31
-categories: [개발일지, 로깅]
+categories: [Spring Boot]
 tags: [spring-boot, monitoring, architecture]
 ---
 

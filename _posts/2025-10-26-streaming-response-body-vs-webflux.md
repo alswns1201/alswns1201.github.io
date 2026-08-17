@@ -1,7 +1,7 @@
 ---
 title: "StreamingResponseBody vs WebFlux Flux: 서버 스트리밍 두 가지 방식"
 date: 2025-10-26
-categories: [개발일지, Streaming]
+categories: [Spring Boot]
 tags: [spring-boot, reactive, architecture]
 ---
 

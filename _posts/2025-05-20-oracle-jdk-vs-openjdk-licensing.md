@@ -1,7 +1,7 @@
 ---
 title: "Oracle JDK는 정말 유료인가 — JDK 라이선스의 진실"
 date: 2025-05-20
-categories: [개발일지, JAVA,SPRING]
+categories: [Spring Boot]
 tags: [java]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "샤딩 환경의 PK 전략: Shard Key 선택과 Snowflake ID"
 date: 2026-04-04
-categories: [아키텍쳐 설계 관련 글]
+categories: [아키텍처]
 tags: [database, sharding, architecture]
 ---
 

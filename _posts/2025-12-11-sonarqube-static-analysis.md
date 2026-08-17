@@ -1,7 +1,7 @@
 ---
 title: "SonarQube 로컬 환경에서 붙여보기"
 date: 2025-12-11
-categories: [아키텍쳐 설계 관련 글, 서버,인프라]
+categories: [인프라]
 tags: [devops, testing, java]
 ---
 

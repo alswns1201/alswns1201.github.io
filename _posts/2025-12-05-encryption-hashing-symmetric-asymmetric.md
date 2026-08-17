@@ -1,7 +1,7 @@
 ---
 title: "단방향 암호화 vs 양방향 암호화 — 뭘 저장하느냐가 선택을 결정한다"
 date: 2025-12-05
-categories: [개발일지, 데이터 통신]
+categories: [Spring Boot]
 tags: [architecture, spring-security]
 ---
 

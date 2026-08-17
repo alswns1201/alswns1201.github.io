@@ -1,7 +1,7 @@
 ---
 title: "비관적 락 vs 낙관적 락: '좋아요' 카운트로 보는 세 가지 구현"
 date: 2026-05-26
-categories: [인프런]
+categories: [아키텍처]
 tags: [database, spring-boot, architecture]
 ---
 

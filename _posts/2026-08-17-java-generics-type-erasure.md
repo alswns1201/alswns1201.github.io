@@ -1,7 +1,7 @@
 ---
 title: "제네릭은 왜 필요하고, 왜 런타임엔 사라지는가 — Function<T,R>과 타입 소거"
 date: 2026-08-17
-categories: [개발일지, "JAVA,SPRING"]
+categories: [Spring Boot]
 tags: [java, generics, architecture]
 ---
 

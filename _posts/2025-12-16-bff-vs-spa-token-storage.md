@@ -1,7 +1,7 @@
 ---
 title: "BFF 환경에서 AccessToken을 쿠키에 담는 이유"
 date: 2025-12-16
-categories: [아키텍쳐 설계 관련 글, BFF]
+categories: [아키텍처]
 tags: [architecture, jwt, frontend]
 ---
 

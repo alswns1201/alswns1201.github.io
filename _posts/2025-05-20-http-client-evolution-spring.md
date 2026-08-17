@@ -1,7 +1,7 @@
 ---
 title: "API 호출 발전 과정 그리고, RestAPI(with Spring)"
 date: 2025-05-20
-categories: [개발일지, 데이터 통신]
+categories: [Spring Boot]
 tags: [spring-boot, api-design, java]
 ---
 

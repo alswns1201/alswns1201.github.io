@@ -1,7 +1,7 @@
 ---
 title: "Spring Cloud Gateway 기본기: MVC 모드 vs WebFlux 모드"
 date: 2026-01-06
-categories: [MSA, springCloud]
+categories: [아키텍처]
 tags: [msa, spring-boot, api-design]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Kafka 프로듀서를 Spring Boot에 연동하기 — 기본 설정 다음에 봐야 할 것들"
 date: 2025-11-23
-categories: [개발일지, Kafka]
+categories: [Kafka]
 tags: [kafka, spring-boot]
 ---
 

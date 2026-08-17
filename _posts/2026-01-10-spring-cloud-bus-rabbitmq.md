@@ -1,7 +1,7 @@
 ---
 title: "Spring Cloud Bus + RabbitMQ(AMQP) 개념과 실습"
 date: 2026-01-10
-categories: [MSA, springCloud]
+categories: [아키텍처]
 tags: [msa, spring-boot, kafka, architecture]
 ---
 

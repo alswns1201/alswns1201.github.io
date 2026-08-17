@@ -1,7 +1,7 @@
 ---
 title: "Spring Boot에서 Swagger(springdoc-openapi)로 API 문서 자동화하기"
 date: 2025-08-02
-categories: [개발일지, SPRINGBOOT]
+categories: [Spring Boot]
 tags: [spring-boot, api-design, documentation]
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "JPA 영속성 컨텍스트: 왜 DTO 없이 Entity를 그대로 반환하면 안 되는가"
 date: 2025-05-17
-categories: [개발일지, SPRINGBOOT]
+categories: [Spring Boot]
 tags: [spring-boot, jpa]
 ---
 

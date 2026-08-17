@@ -1,7 +1,7 @@
 ---
 title: "Spring Data Envers로 엔티티 변경 이력 관리하기"
 date: 2025-10-08
-categories: [개발일지, SPRINGBOOT]
+categories: [Spring Boot]
 tags: [spring-boot, jpa, database]
 ---
 

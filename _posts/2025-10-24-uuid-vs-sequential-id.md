@@ -1,7 +1,7 @@
 ---
 title: "UUID vs Sequential ID: 데이터베이스 설계에서 무엇을 선택할까?"
 date: 2025-10-24
-categories: [개발일지, SPRINGBOOT]
+categories: [Spring Boot]
 ---
 
 ## 왜 이 선택이 나중에 바꾸기 어려운가

@@ -1,7 +1,7 @@
 ---
 title: "쿠버네티스 기본기: Pod, Deployment, Service의 역할 분리"
 date: 2025-05-24
-categories: [MSA, 쿠버네티스]
+categories: [인프라]
 tags: [kubernetes, docker, devops]
 ---
 

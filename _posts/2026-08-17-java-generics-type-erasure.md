@@ -41,23 +41,24 @@ public interface Function<T, R> {
 쓴 예를 보면:
 
 ```java
-private AccountView handle(String accountId, Function<BankAccount, BankAccountEvent> decide) {
-    BankAccount account = repository.load(accountId);
-    BankAccountEvent event = decide.apply(account);
+private RewardView handle(String accountId, Instant now, Function<RewardAccount, RewardEvent> decide) {
+    RewardAccount account = repository.load(accountId);
+    RewardEvent event = decide.apply(account);
     ...
 }
 
-public AccountView deposit(String accountId, long amount) {
-    return handle(accountId, account -> account.decideDeposit(amount));
+public RewardView earn(String accountId, long amount, Duration validFor) {
+    Instant now = Instant.now();
+    return handle(accountId, now, account -> account.decideEarn(amount, now, now.plus(validFor)));
 }
 ```
 
-`Function<BankAccount, BankAccountEvent>`라고 선언하는 순간 "이 함수는 반드시
-`BankAccount`를 받아서 `BankAccountEvent`를 돌려줘야 한다"는 게 타입으로
+`Function<RewardAccount, RewardEvent>`라고 선언하는 순간 "이 함수는 반드시
+`RewardAccount`를 받아서 `RewardEvent`를 돌려줘야 한다"는 게 타입으로
 고정된다. 만약 `decide.apply(account)`의 결과를 실수로 `String` 변수에 담으려
 하면, 캐스팅이고 뭐고 할 것도 없이 그 자리에서 컴파일 에러가 난다. 제네릭이
 없었다면 `Function` 대신 `Object apply(Object)` 시그니처를 쓰고, 호출부마다
-`(BankAccountEvent) decide.apply(account)`처럼 캐스팅을 손으로 넣어야 했을
+`(RewardEvent) decide.apply(account)`처럼 캐스팅을 손으로 넣어야 했을
 것이다 — 캐스팅 타입을 잘못 적어도 컴파일러는 못 잡고, 역시 런타임에야 터진다.
 
 ## 그런데 왜 `List<String>.class`는 안 될까 — 타입 소거

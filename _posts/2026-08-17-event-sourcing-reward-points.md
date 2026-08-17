@@ -106,11 +106,35 @@ public record PointsRedeemedEvent(long amount, List<BatchConsumption> consumptio
 **기록이 많아지면 매번 처음부터 계산하기 부담스럽다.** 그래서 중간중간 "이 시점까지
 계산한 결과"를 스냅샷으로 저장해두고, 다음엔 그 이후 기록만 이어서 계산한다.
 
-**조회 전용으로 값을 미리 계산해두는 것(캐시)도 조심해야 한다.** 캐시해둔 숫자
-하나만 두면, 포인트가 저절로 만료될 때 그 숫자를 갱신할 계기가 없어서 캐시가
-틀린 값이 돼버린다. 그래서 캐시는 "포인트 배치별로" 만들어두고, 조회할 때마다
-유효기간을 다시 확인해서 합산한다 — 여전히 전체 기록을 다시 계산하는 것보다는
-훨씬 싸다.
+**조회 전용으로 값을 미리 계산해두는 것(캐시)도 조심해야 한다.** 기록(이벤트)을
+쌓는 쪽과, 그 기록을 보기 좋게 미리 정리해두는 쪽을 분리해서 관리하는 걸
+**CQRS**(Command Query Responsibility Segregation)라고 부른다 — 기록 하나하나가
+아니라, 그 기록들을 훑어서 "지금 상태가 뭔지" 미리 계산해둔 결과를 별도로 저장해두는
+것이다.
+
+```mermaid
+flowchart LR
+    subgraph CommandSide["Command side"]
+        C1["Command: earn 1000, 30일"] --> E1["PointsEarned"]
+        C2["Command: earn 500, 2초"] --> E2["PointsEarned"]
+        C3["Command: redeem 300"] --> E3["PointsRedeemed"]
+    end
+
+    subgraph QuerySide["Query side"]
+        RM[("reward_batch_summary<br/>accountId: u1<br/>batchId: b2<br/>remaining: 500<br/>expiresAt: +2s")]
+    end
+
+    E1 -- Projection --> RM
+    E2 -- Projection --> RM
+    E3 -- Projection --> RM
+```
+
+왼쪽(Command side)에 쌓이는 `PointsEarned`, `PointsRedeemed` 이벤트들이 원본이고,
+그게 하나씩 생길 때마다 오른쪽(Query side)의 배치별 요약 행을 그때그때 갱신
+(Projection)한다. 문제는 이 요약 행 하나만 두면, 포인트가 저절로 만료될 때 그
+값을 갱신할 계기가 없어서 캐시가 틀린 값이 돼버린다는 것 — 그래서 캐시는 "포인트
+배치별로" 만들어두고, 조회할 때마다 유효기간을 다시 확인해서 합산한다. 여전히
+전체 기록을 다시 계산하는 것보다는 훨씬 싸다.
 
 **"지금/미래"와 "과거"는 답하는 방법이 다르다.** 캐시를 이용한 빠른 조회는 지금이나
 미래를 물어볼 때만 정확하다. "그때는 얼마였는지" 같은 과거 질문에는 그 시점까지의

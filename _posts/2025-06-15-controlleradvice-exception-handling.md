@@ -1,8 +1,7 @@
 ---
 title: "try-catch 지옥에서 벗어나기: @ControllerAdvice로 우아하게 예외 처리하기"
 date: 2025-06-15
-categories: [Spring Boot]
-tags: [spring-boot, architecture]
+categories: [Java/Spring]
 ---
 
 서비스 계층에서 예외를 직접 try-catch로 잡아 처리하는 코드는 언뜻 안전해 보이지만,

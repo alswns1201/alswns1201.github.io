@@ -1,8 +1,7 @@
 ---
 title: "벡터 DB는 왜 필요한가 — ChromaDB로 보는 임베딩 검색의 실체"
 date: 2026-05-04
-categories: [AI]
-tags: [ai, rag, vector-db]
+categories: [LLM]
 ---
 
 *(RAG의 전체 흐름과 검색 품질 문제는 [RAG란 무엇인가]({% post_url 2026-04-26-rag-basics %})에서

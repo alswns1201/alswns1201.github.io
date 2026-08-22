@@ -1,8 +1,7 @@
 ---
 title: "JPA 값 객체(Value Object)와 N+1 — @BatchSize vs Fetch Join, 언제 무엇을 쓸까"
 date: 2025-05-18
-categories: [Spring Boot]
-tags: [spring-boot, jpa]
+categories: [Java/Spring]
 ---
 
 ## 값 객체란: 식별자가 없다는 것의 의미

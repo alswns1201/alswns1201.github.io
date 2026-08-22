@@ -2,7 +2,6 @@
 title: "레거시 WAS & Nginx를 Docker로 현대화하기: 마이그레이션 A to Z 가이드"
 date: 2025-07-10
 categories: [인프라]
-tags: [docker, devops, architecture]
 ---
 
 서버에 Nginx와 Tomcat을 직접 설치해 운영하는 방식은 눈에 보이는 문제가 없다가도,

@@ -1,8 +1,7 @@
 ---
 title: "gRPC, REST 대신 선택하는 기준 (with Spring Boot)"
 date: 2025-05-19
-categories: [Spring Boot]
-tags: [grpc, spring-boot, api-design]
+categories: [Java/Spring]
 ---
 
 REST API가 표준처럼 쓰이는 상황에서 gRPC를 도입하려면, "왜 굳이"에 먼저 답할 수 있어야

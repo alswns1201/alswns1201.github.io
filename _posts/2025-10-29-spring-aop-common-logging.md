@@ -1,8 +1,7 @@
 ---
 title: "Spring AOP로 Controller/Service 공통 로깅 구현하기"
 date: 2025-10-29
-categories: [Spring Boot]
-tags: [spring-boot, monitoring, architecture]
+categories: [Java/Spring]
 ---
 
 서비스가 커질수록 Controller나 Service 단에서 "요청이 들어왔는가", "정상적으로

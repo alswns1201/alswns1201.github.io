@@ -1,8 +1,7 @@
 ---
 title: "JPA 엔티티와 값 객체 — 무엇이 다르고, 언제 무엇을 쓸까"
 date: 2025-06-04
-categories: [Spring Boot]
-tags: [jpa, spring-boot, java]
+categories: [Java/Spring]
 ---
 
 JPA로 도메인을 설계하다 보면 일단 다 `@Entity`로 만들고 싶은 유혹이 생긴다. 하지만 모든 걸

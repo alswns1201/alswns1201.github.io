@@ -1,8 +1,7 @@
 ---
 title: "BFS 문제를 풀어보고 Claude Code한테 피드백 받기"
 date: 2026-04-14
-categories: [AI]
-tags: [claude-code, algorithms, ai]
+categories: [LLM]
 ---
 
 백준 1261번(알고스팟) 문제를 직접 풀어본 뒤, Claude Code에게 피드백을 받아본 기록이다.

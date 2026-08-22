@@ -1,8 +1,7 @@
 ---
 title: "JPA 도메인 설계, 요구사항부터 테스트까지의 사고 흐름"
 date: 2025-07-01
-categories: [Spring Boot]
-tags: [spring-boot, jpa, architecture]
+categories: [Java/Spring]
 ---
 
 JPA 문법(`@ManyToOne`, `@Embeddable` 같은 어노테이션)을 아는 것과, 요구사항을 받았을 때

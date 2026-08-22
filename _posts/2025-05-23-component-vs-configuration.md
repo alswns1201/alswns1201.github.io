@@ -1,8 +1,7 @@
 ---
 title: "@Bean, @Component vs @Configuration: 빈 등록 방식의 차이와 함정"
 date: 2025-05-23
-categories: [Spring Boot]
-tags: [spring-boot, java, architecture]
+categories: [Java/Spring]
 ---
 
 스프링 컨테이너는 빈(Bean)의 생명주기를 관리하고 필요한 곳에 주입해준다. 문제는 빈을

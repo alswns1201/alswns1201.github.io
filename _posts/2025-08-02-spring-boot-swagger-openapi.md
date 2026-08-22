@@ -1,8 +1,7 @@
 ---
 title: "Spring Boot에서 Swagger(springdoc-openapi)로 API 문서 자동화하기"
 date: 2025-08-02
-categories: [Spring Boot]
-tags: [spring-boot, api-design, documentation]
+categories: [Java/Spring]
 ---
 
 API 문서를 손으로 쓰고 유지하는 건 코드가 바뀔 때마다 같이 안 바뀌기 마련이라

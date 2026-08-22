@@ -1,8 +1,7 @@
 ---
 title: "Spring Boot + Quartz Scheduler: @Scheduled로는 안 되는 지점"
 date: 2025-10-04
-categories: [Spring Boot]
-tags: [spring-boot, devops]
+categories: [Java/Spring]
 ---
 
 ## 스케줄러와 배치는 다른 질문에 답한다

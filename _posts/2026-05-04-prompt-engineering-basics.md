@@ -1,8 +1,7 @@
 ---
 title: "프롬프트 엔지니어링: 언제 프롬프트로 풀리고, 언제 안 풀리는가"
 date: 2026-05-04
-categories: [AI]
-tags: [ai, prompt-engineering, llm]
+categories: [LLM]
 ---
 
 프롬프트 엔지니어링은 결국 "모델이 원하는 결과를 안정적으로 내도록 입력을

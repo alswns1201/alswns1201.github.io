@@ -2,7 +2,6 @@
 title: "TDD, Service만이 아니라 Controller와 외부 API까지 테스트로 감싸는 법"
 date: 2025-11-03
 categories: [테스트]
-tags: [testing, tdd, spring-boot]
 ---
 
 TDD를 "테스트를 먼저 짜고 그걸 만족시키는 코드를 쓴다"는 원론으로만 알고 있으면

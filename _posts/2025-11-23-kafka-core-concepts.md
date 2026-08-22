@@ -2,7 +2,6 @@
 title: "Kafka 핵심 개념: Producer, Topic, Consumer, 그리고 오프셋"
 date: 2025-11-23
 categories: [Kafka]
-tags: [kafka, msa, architecture]
 ---
 
 Kafka를 다른 메시지 큐와 헷갈리기 쉬운 지점은 딱 하나다 — **메시지를 읽어도 큐에서

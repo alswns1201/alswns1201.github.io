@@ -1,0 +1,41 @@
+<!-- Posts grouped by topic (category), shown in the right-hand panel -->
+
+{% assign priority = "LLM,Kafka,Java/Spring,DB,개발 고민/설계,대용량 고민" | split: ',' %}
+
+{% assign ordered_names = "" | split: "" %}
+{% for name in priority %}
+  {% if site.categories[name] %}
+    {% assign ordered_names = ordered_names | push: name %}
+  {% endif %}
+{% endfor %}
+
+{% assign remaining = site.categories | sort %}
+{% for pair in remaining %}
+  {% unless priority contains pair[0] %}
+    {% assign ordered_names = ordered_names | push: pair[0] %}
+  {% endunless %}
+{% endfor %}
+
+{% if ordered_names.size > 0 %}
+  <section>
+    <h2 class="panel-heading">주제별 글</h2>
+    <div class="topics-list mt-2 mb-1 me-3">
+      {% for name in ordered_names %}
+        {% assign posts = site.categories[name] | sort: 'date' | reverse %}
+        <details class="topic-group">
+          <summary>
+            {{ name }}
+            <span class="topic-count text-muted">({{ posts.size }})</span>
+          </summary>
+          <ul class="list-unstyled">
+            {% for post in posts %}
+              <li>
+                <a href="{{ post.url | relative_url }}" class="topic-post-link">{{ post.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </details>
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}

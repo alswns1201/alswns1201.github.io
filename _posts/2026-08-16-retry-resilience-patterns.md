@@ -1,8 +1,7 @@
 ---
 title: "재시도와 복원력 패턴: Timeout → Retry → CircuitBreaker → Fallback 조합 순서"
 date: 2026-08-16
-categories: [Spring Boot]
-tags: [spring-boot, resilience4j, architecture]
+categories: [개발 고민/설계]
 ---
 
 분산 환경에서 외부 호출은 언젠가 반드시 실패한다. 네트워크가 순간적으로

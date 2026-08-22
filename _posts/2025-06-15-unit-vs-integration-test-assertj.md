@@ -2,7 +2,6 @@
 title: "단위 테스트 vs 통합 테스트, 언제 무엇을 써야 할까? (feat. AssertJ)"
 date: 2025-06-15
 categories: [테스트]
-tags: [testing, tdd, spring-boot]
 ---
 
 테스트를 "많이 짜면 좋다"는 건 다들 안다. 문제는 어떤 테스트를 얼마나 짜야 하냐는

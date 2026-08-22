@@ -1,8 +1,7 @@
 ---
 title: "Spring Cloud Eureka로 보는 서비스 디스커버리"
 date: 2025-12-26
-categories: [아키텍처]
-tags: [msa, spring-boot, service-discovery]
+categories: [개발 고민/설계]
 ---
 
 MSA에서 서비스가 늘어나면 가장 먼저 마주치는 질문이 있다 — "서비스가 서로의 주소를

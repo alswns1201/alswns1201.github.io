@@ -1,8 +1,7 @@
 ---
 title: "Spring Boot에서 Bucket4j로 API 요청 제한(Rate Limiting) 구현하기"
 date: 2025-10-26
-categories: [Spring Boot]
-tags: [spring-boot, api-design, architecture]
+categories: [Java/Spring]
 ---
 
 특정 클라이언트가 과도하게 요청을 보내면 서버 자원을 잠식하고 다른 사용자의 응답

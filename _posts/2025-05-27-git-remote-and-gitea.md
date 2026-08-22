@@ -2,7 +2,6 @@
 title: "원격 저장소는 왜 필요한가 — 그리고 GitHub 대신 Gitea를 쓸지 판단하는 기준"
 date: 2025-05-27
 categories: [인프라]
-tags: [devops, architecture]
 ---
 
 Git은 로컬에서도 완결된 버전 관리 시스템이다. 커밋, 브랜치, 되돌리기 모두 로컬 저장소

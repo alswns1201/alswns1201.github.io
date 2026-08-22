@@ -2,7 +2,6 @@
 title: "Kafka Connect로 DB 파이프라인 구성하기 — Source/Sink Connector와 CDC"
 date: 2026-02-16
 categories: [Kafka]
-tags: [kafka, database, cdc, msa]
 ---
 
 MSA에서 서비스마다 자기 DB를 따로 두던 구조(예: 각 서비스가 H2를 각자 물고 있는 실습

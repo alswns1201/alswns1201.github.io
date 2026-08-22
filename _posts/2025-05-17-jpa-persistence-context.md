@@ -1,8 +1,7 @@
 ---
 title: "JPA 영속성 컨텍스트: 왜 DTO 없이 Entity를 그대로 반환하면 안 되는가"
 date: 2025-05-17
-categories: [Spring Boot]
-tags: [spring-boot, jpa]
+categories: [Java/Spring]
 ---
 
 영속성 컨텍스트는 JPA를 처음 배울 때 "1차 캐시, 더티 체킹" 같은 용어로 외우고 넘어가기

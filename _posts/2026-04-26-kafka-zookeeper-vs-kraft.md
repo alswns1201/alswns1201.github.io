@@ -2,7 +2,6 @@
 title: "Kafka는 왜 Zookeeper를 버렸는가 — Zookeeper 모드 vs KRaft 모드"
 date: 2026-04-26
 categories: [Kafka]
-tags: [kafka, msa, architecture]
 ---
 
 Kafka를 처음 띄워보면 이상한 점이 하나 있다 — Kafka 혼자 뜨는 게 아니라 Zookeeper라는

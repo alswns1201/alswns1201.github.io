@@ -2,7 +2,6 @@
 title: "Docker로 Kafka 토픽 만들어보기 — 그리고 파티션 개수를 신중하게 정해야 하는 이유"
 date: 2026-02-08
 categories: [Kafka]
-tags: [kafka, docker]
 ---
 
 Docker로 띄운 Kafka 컨테이너 안에서 토픽을 만들고 메시지를 주고받는 건 명령어

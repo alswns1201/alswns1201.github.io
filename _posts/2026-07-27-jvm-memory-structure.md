@@ -1,8 +1,7 @@
 ---
 title: "JVM 메모리 구조: StackOverflowError와 OutOfMemoryError를 이해하는 법"
 date: 2026-07-27
-categories: [Spring Boot]
-tags: [java, jvm, architecture]
+categories: [Java/Spring]
 ---
 
 JVM 메모리 구조를 외우는 건 큰 의미가 없다. 실제로 필요한 건 "이 에러가 왜, 어느

@@ -1,8 +1,7 @@
 ---
 title: "Oracle JDK는 정말 유료인가 — JDK 라이선스의 진실"
 date: 2025-05-20
-categories: [Spring Boot]
-tags: [java]
+categories: [Java/Spring]
 ---
 
 "Oracle JDK는 유료다"라는 말은 반은 맞고 반은 틀리다. 정확히는 **Java 언어와 문법을 쓰는 건 항상 무료**고,

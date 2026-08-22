@@ -1,8 +1,7 @@
 ---
 title: "빌더 패턴으로 JPA 엔터티 안전하게 생성하기"
 date: 2025-06-08
-categories: [Spring Boot]
-tags: [jpa, spring-boot, java]
+categories: [Java/Spring]
 ---
 
 *(원제 "Builder 패턴을 적용한 엔터티". 원문의 핵심은 "연관관계 중간 엔터티에서 필수 값을

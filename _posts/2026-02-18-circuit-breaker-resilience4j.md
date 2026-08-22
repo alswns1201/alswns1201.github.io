@@ -1,8 +1,7 @@
 ---
 title: "CircuitBreaker로 장애 전파 막기 - Resilience4j"
 date: 2026-02-18
-categories: [아키텍처]
-tags: [msa, resilience4j, architecture]
+categories: [개발 고민/설계]
 ---
 
 MSA에서 서비스 A가 서비스 B를 호출하는데 B가 죽었다고 해보자. A가 계속 B를 호출하며

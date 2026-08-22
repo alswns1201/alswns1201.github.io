@@ -1,8 +1,7 @@
 ---
 title: "BFF(Backend for Frontend) 아키텍처, 언제 필요하고 언제 과한가"
 date: 2025-06-23
-categories: [아키텍처]
-tags: [architecture, api-design, msa]
+categories: [개발 고민/설계]
 ---
 
 프론트엔드가 백엔드 API를 직접 호출하는 구조는 프로젝트 초기엔 별문제가 없다. 문제는

@@ -1,8 +1,7 @@
 ---
 title: "전략 패턴으로 카카오·네이버·구글 소셜 로그인 유연하게 구현하기"
 date: 2025-06-14
-categories: [Spring Boot]
-tags: [spring-boot, architecture, spring-security]
+categories: [Java/Spring]
 ---
 
 소셜 로그인을 카카오 하나만 구현한다면 `KakaoLoginService` 하나로 충분하다. 문제는

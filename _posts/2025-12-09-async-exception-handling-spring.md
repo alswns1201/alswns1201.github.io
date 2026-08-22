@@ -1,8 +1,7 @@
 ---
 title: "@Async 예외가 조용히 사라지는 이유와 AsyncUncaughtExceptionHandler"
 date: 2025-12-09
-categories: [Spring Boot]
-tags: [spring-boot, java, exception-handling]
+categories: [Java/Spring]
 ---
 
 `@Async`로 비동기 작업을 돌리다 보면 한 번쯤 겪는다 — 분명 예외가 터졌는데

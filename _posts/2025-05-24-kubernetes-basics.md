@@ -2,7 +2,6 @@
 title: "쿠버네티스 기본기: Pod, Deployment, Service의 역할 분리"
 date: 2025-05-24
 categories: [인프라]
-tags: [kubernetes, docker, devops]
 ---
 
 쿠버네티스를 처음 배울 때 헷갈리는 지점은 대개 "왜 개념이 이렇게 많이 나뉘어 있는가"다.

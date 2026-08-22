@@ -1,7 +1,7 @@
 ---
 title: "RAG란 무엇인가 — 그리고 언제 도움이 안 되는가"
 date: 2026-04-26
-categories: [AI]
+categories: [LLM]
 ---
 
 ## RAG가 푸는 문제

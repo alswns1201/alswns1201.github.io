@@ -2,7 +2,6 @@
 title: "Kafka로 메시지 큐 다루기 (4) — Spring Boot 컨슈머 연동"
 date: 2025-12-14
 categories: [Kafka]
-tags: [kafka, spring-boot]
 ---
 
 [1편](Kafka 서버 설치)에서 EC2에 Kafka를 올리고, [3편](프로듀서 연동)에서 이메일

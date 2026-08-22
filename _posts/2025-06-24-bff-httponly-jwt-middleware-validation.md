@@ -1,8 +1,7 @@
 ---
 title: "BFF에서 httpOnly JWT를 미들웨어가 '진짜' 검증하게 만들기"
 date: 2025-06-24
-categories: [아키텍처]
-tags: [spring-security, jwt, bff]
+categories: [개발 고민/설계]
 ---
 
 httpOnly 쿠키로 JWT를 저장하면 자바스크립트가 토큰에 접근할 수 없으니 XSS로 토큰이

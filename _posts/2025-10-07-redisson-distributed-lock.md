@@ -1,8 +1,7 @@
 ---
 title: "Redisson으로 분산 락 다루기: tryLock의 함정"
 date: 2025-10-07
-categories: [아키텍처]
-tags: [redis, concurrency, distributed-lock]
+categories: [대용량 고민]
 ---
 
 단일 서버라면 `synchronized`나 `ReentrantLock`으로 동시성 문제를 막을 수 있다. 하지만

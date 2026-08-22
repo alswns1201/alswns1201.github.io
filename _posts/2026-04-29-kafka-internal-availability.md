@@ -2,7 +2,6 @@
 title: "카프카 내부 구조와 데이터 가용성 메커니즘의 이해"
 date: 2026-04-29
 categories: [Kafka]
-tags: [kafka, msa, architecture]
 ---
 
 카프카를 설계하거나 운영할 때 핵심은 "데이터가 어떻게 분산 저장되고, 장애 상황에서

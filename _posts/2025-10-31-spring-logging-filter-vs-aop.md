@@ -1,8 +1,7 @@
 ---
 title: "Spring에서 공통 로그 처리: Filter vs AOP"
 date: 2025-10-31
-categories: [Spring Boot]
-tags: [spring-boot, monitoring, architecture]
+categories: [Java/Spring]
 ---
 
 요청(Request) 단위로 IP, 헤더, URI, 파라미터를 공통으로 로깅해야 한다는 요구사항이

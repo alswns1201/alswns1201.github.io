@@ -1,8 +1,7 @@
 ---
 title: "Spring Cloud Gateway 기본기: MVC 모드 vs WebFlux 모드"
 date: 2026-01-06
-categories: [아키텍처]
-tags: [msa, spring-boot, api-design]
+categories: [개발 고민/설계]
 ---
 
 *(원제 "[인프런] Spring Cloud gateway". 원문의 핵심이 "두 가지 구현 방식이 있고

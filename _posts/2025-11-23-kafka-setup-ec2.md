@@ -2,7 +2,6 @@
 title: "AWS EC2 프리티어에 Kafka 설치하기, 그리고 이 구성이 왜 개발용일 수밖에 없는가"
 date: 2025-11-23
 categories: [Kafka]
-tags: [kafka, devops]
 ---
 
 Kafka를 처음 접할 때 가장 좋은 방법은 로컬이 아니라 실제 서버에 직접 설치해보는

@@ -1,8 +1,7 @@
 ---
 title: "동기/비동기, 블로킹/논블로킹 — Spring에서 별도 Thread Pool을 두는 이유"
 date: 2025-10-07
-categories: [Spring Boot]
-tags: [java, spring-boot, redis]
+categories: [Java/Spring]
 ---
 
 "동기/비동기"와 "블로킹/논블로킹"은 자주 같은 뜻처럼 섞여 쓰이지만 서로 다른 축이다.

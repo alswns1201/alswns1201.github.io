@@ -1,8 +1,7 @@
 ---
 title: "RAG 실전: 청킹 전략, 하이브리드 서치, 그리고 Reranker"
 date: 2026-05-10
-categories: [AI]
-tags: [ai, rag, llm]
+categories: [LLM]
 ---
 
 RAG의 개념(질문 → 검색 → 답변)과 검색 품질이 왜 중요한지는 [RAG란 무엇인가]({{ '/posts/rag-basics/' | relative_url }})에서

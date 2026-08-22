@@ -1,8 +1,7 @@
 ---
 title: "Java 접근 제어자(private / default / protected / public) 완전 정리"
 date: 2025-12-12
-categories: [Spring Boot]
-tags: [java, architecture]
+categories: [Java/Spring]
 ---
 
 접근 제어자는 "어디까지 접근을 허용할 것이냐"를 결정한다. 네 가지 키워드 자체는

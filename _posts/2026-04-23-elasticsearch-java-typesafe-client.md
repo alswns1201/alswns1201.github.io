@@ -1,8 +1,7 @@
 ---
 title: "RestTemplate로 짜던 Elasticsearch 쿼리를 elasticsearch-java로 옮기며 만난 함정 두 가지"
 date: 2026-04-23
-categories: [Spring Boot]
-tags: [spring-boot, elasticsearch, java]
+categories: [Java/Spring]
 ---
 
 기존 프로젝트는 Elasticsearch에 쿼리를 던질 때 `RestTemplate`으로 REST API를 직접

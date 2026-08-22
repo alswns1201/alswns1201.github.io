@@ -50,3 +50,56 @@
     --btn-share-hover-color: #5eead4;
   }
 }
+
+/* Topic list panel widget */
+.topics-list {
+  font-size: 0.9rem;
+
+  .topic-group {
+    margin-bottom: 0.5rem;
+
+    summary {
+      cursor: pointer;
+      list-style: none;
+      padding: 0.15rem 0;
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      &::before {
+        content: '\f105';
+        font-family: 'Font Awesome 6 Free';
+        font-weight: 900;
+        display: inline-block;
+        width: 1em;
+        transition: transform 0.15s ease-in-out;
+      }
+    }
+
+    &[open] summary::before {
+      transform: rotate(90deg);
+    }
+
+    .topic-count {
+      font-size: 0.8em;
+    }
+
+    ul {
+      margin: 0.25rem 0 0.25rem 1.1rem;
+    }
+
+    li {
+      margin-bottom: 0.35rem;
+      line-height: 1.3;
+    }
+
+    .topic-post-link {
+      color: var(--text-color);
+
+      &:hover {
+        color: var(--link-color);
+      }
+    }
+  }
+}

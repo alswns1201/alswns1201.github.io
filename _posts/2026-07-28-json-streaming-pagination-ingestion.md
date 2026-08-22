@@ -1,8 +1,7 @@
 ---
 title: "대용량 페이지네이션 API를 안전하게 순회하며 적재하기"
 date: 2026-07-28
-categories: [아키텍처]
-tags: [java, api-design, architecture]
+categories: [대용량 고민]
 ---
 
 `nextUrl` 기반으로 페이지네이션된 API를 순회하면서 결과를 DB에 적재하는 로직을 짤

@@ -2,7 +2,6 @@
 title: "kind로 로컬 쿠버네티스 클러스터 띄우고 Spring Boot 앱 배포하기"
 date: 2026-04-30
 categories: [인프라]
-tags: [kubernetes, docker, devops]
 ---
 
 쿠버네티스 개념([Pod, Deployment, Service의 역할 분리](/posts/kubernetes-basics/))을

@@ -1,8 +1,7 @@
 ---
 title: "Spring 예외 처리: @ExceptionHandler와 @RestControllerAdvice 제대로 나누기"
 date: 2025-05-22
-categories: [Spring Boot]
-tags: [spring-boot, exception-handling, java]
+categories: [Java/Spring]
 ---
 
 예외 처리를 "어디서 잡을 것인가"는 생각보다 설계 질문이다. 컨트롤러 안에서 잡을지,

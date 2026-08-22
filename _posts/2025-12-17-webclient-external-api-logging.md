@@ -1,8 +1,7 @@
 ---
 title: "Spring WebClient로 외부 API 로그 분리하기"
 date: 2025-12-17
-categories: [Spring Boot]
-tags: [spring-boot, logging, webclient]
+categories: [Java/Spring]
 ---
 
 외부 API 연동이 들어간 순간부터 로그 전략은 바뀌어야 한다. Controller 필터에서

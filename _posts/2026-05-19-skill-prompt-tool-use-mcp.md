@@ -1,8 +1,7 @@
 ---
 title: "Skill Prompt, Tool Use, MCP — LLM을 확장하는 세 가지 방식은 뭐가 다른가"
 date: 2026-05-19
-categories: [AI]
-tags: [ai, llm, mcp]
+categories: [LLM]
 ---
 
 LLM을 실제 서비스에 붙이다 보면 세 가지 개념이 계속 등장한다. Skill Prompt, Tool

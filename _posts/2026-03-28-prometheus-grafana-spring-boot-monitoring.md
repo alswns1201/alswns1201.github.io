@@ -2,7 +2,6 @@
 title: "Prometheus + Grafana로 Spring Boot 모니터링 구축하기"
 date: 2026-03-28
 categories: [인프라]
-tags: [spring-boot, monitoring, docker, msa]
 ---
 
 Actuator가 노출하는 지표가 정확히 뭘 말해주는지 눈으로 확인하고 싶어서 시작한 것이

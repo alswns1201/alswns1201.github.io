@@ -2,7 +2,6 @@
 title: "React useEffect의 모든 것"
 date: 2025-06-16
 categories: [프론트엔드]
-tags: [react, frontend]
 ---
 
 `useEffect`가 헷갈리는 이유는 API 자체가 어려워서가 아니라, "언제 다시 실행되는가"를

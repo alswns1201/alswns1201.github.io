@@ -1,8 +1,7 @@
 ---
 title: "MariaDB와 Elasticsearch를 다른 서버로 옮기기: 이관 절차와 그 이유"
 date: 2025-07-05
-categories: [인프라]
-tags: [database, devops, architecture]
+categories: [DB]
 ---
 
 서버를 옮길 때 "덤프 뜨고 복원하면 되지"로 끝나지 않는 이유는, 무엇을 몇 개로 나눠서

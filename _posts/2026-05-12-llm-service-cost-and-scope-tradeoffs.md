@@ -1,8 +1,7 @@
 ---
 title: "LLM 사용 서비스, 실제로 상용화하려면 고려해야 하는 것들"
 date: 2026-05-12
-categories: [AI]
-tags: [ai, llm, architecture]
+categories: [LLM]
 ---
 
 LLM을 붙인 사이드 프로젝트를 상용 서비스로 키워보려고 하면, 기술적으로 동작하는 것과

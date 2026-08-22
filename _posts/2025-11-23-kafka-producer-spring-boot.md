@@ -2,7 +2,6 @@
 title: "Kafka 프로듀서를 Spring Boot에 연동하기 — 기본 설정 다음에 봐야 할 것들"
 date: 2025-11-23
 categories: [Kafka]
-tags: [kafka, spring-boot]
 ---
 
 Kafka에 메시지를 넣는 것 자체는 몇 줄이면 끝난다. 진짜 판단이 필요한 지점은 "이걸

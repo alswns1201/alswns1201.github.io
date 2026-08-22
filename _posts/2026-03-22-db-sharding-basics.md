@@ -1,8 +1,7 @@
 ---
 title: "데이터베이스 분산과 샤딩 개념"
 date: 2026-03-22
-categories: [아키텍처]
-tags: [database, architecture, msa]
+categories: [대용량 고민]
 ---
 
 저장할 데이터와 트래픽이 늘어나면 가장 먼저 떠오르는 선택지는 **scale-up**(장비

@@ -1,8 +1,7 @@
 ---
 title: "Spring Data Envers로 엔티티 변경 이력 관리하기"
 date: 2025-10-08
-categories: [Spring Boot]
-tags: [spring-boot, jpa, database]
+categories: [Java/Spring]
 ---
 
 "누가 언제 이 값을 바꿨는가"를 추적해야 하는 요구사항은 감사(audit) 로그, 데이터

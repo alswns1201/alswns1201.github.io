@@ -1,8 +1,7 @@
 ---
 title: "StreamingResponseBody vs WebFlux Flux: 서버 스트리밍 두 가지 방식"
 date: 2025-10-26
-categories: [Spring Boot]
-tags: [spring-boot, reactive, architecture]
+categories: [Java/Spring]
 ---
 
 주식 시세, 로그 스트리밍, 실시간 알림처럼 서버에서 클라이언트로 데이터를 계속 흘려보내야

@@ -1,8 +1,7 @@
 ---
 title: "Spring Cloud Bus + RabbitMQ(AMQP) 개념과 실습"
 date: 2026-01-10
-categories: [아키텍처]
-tags: [msa, spring-boot, kafka, architecture]
+categories: [개발 고민/설계]
 ---
 
 Config Server를 쓰는 마이크로서비스 환경을 생각해보자. 설정을 바꾸면 Config

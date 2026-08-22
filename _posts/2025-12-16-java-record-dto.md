@@ -1,8 +1,7 @@
 ---
 title: "Spring Boot에서 record를 DTO로 쓰기: 왜 잘 맞고, 왜 Entity에는 못 쓰는가"
 date: 2025-12-16
-categories: [Spring Boot]
-tags: [java, spring-boot, jpa]
+categories: [Java/Spring]
 ---
 
 DTO를 만들 때마다 반복되던 보일러플레이트가 있다.

@@ -1,8 +1,7 @@
 ---
 title: "ERP 개발을 위한 회계 기본기: 전표, 전기, 역분개"
 date: 2026-04-01
-categories: [아키텍처]
-tags: [architecture, database]
+categories: [개발 고민/설계]
 ---
 
 ERP 도메인을 처음 맡으면 코드보다 회계 개념이 먼저 막힌다. 그런데 이 개념들은

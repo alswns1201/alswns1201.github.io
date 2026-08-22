@@ -1,8 +1,7 @@
 ---
 title: "Claude Code 컨텍스트 관리: .claudeignore, skills, /compact"
 date: 2026-04-13
-categories: [AI]
-tags: [claude-code, ai]
+categories: [LLM]
 ---
 
 Claude Code를 매일 쓰다 보면 결국 마주치는 문제는 기능이 아니라 **컨텍스트 관리**다.

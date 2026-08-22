@@ -1,8 +1,7 @@
 ---
 title: "OFFSET이 커질수록 느려지는 이유, 그리고 그 다음 단계"
 date: 2026-04-11
-categories: [아키텍처]
-tags: [database, mysql, index]
+categories: [대용량 고민]
 ---
 
 대용량 게시글 목록을 페이지네이션으로 조회할 때, 단순히 `LIMIT`/`OFFSET`만 쓰면

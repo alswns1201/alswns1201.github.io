@@ -2,7 +2,6 @@
 title: "SonarQube 로컬 환경에서 붙여보기"
 date: 2025-12-11
 categories: [인프라]
-tags: [devops, testing, java]
 ---
 
 *(원제 "sonarqube". 원문은 로컬 설치 절차 메모였는데, 왜 이 도구를 코드 리뷰와

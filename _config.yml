@@ -127,7 +127,6 @@ kramdown:
 plugins:
   - jekyll-paginate
   - jekyll-seo-tag
-  - jekyll-archives
   - jekyll-sitemap
   - jekyll-include-cache
 
@@ -186,10 +185,3 @@ exclude:
   - Gemfile.lock
   - _raw
   - _drafts_review
-
-jekyll-archives:
-  enabled: [tags]
-  layouts:
-    tag: tag
-  permalinks:
-    tag: /tags/:name/

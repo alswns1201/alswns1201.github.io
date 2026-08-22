@@ -1,8 +1,7 @@
 ---
 title: "Spring Security + JWT 토큰 기반 인증 구축하기"
 date: 2025-06-08
-categories: [Spring Boot]
-tags: [spring-security, jwt, authentication]
+categories: [Java/Spring]
 ---
 
 세션 대신 JWT를 쓰는 이유는 "요즘 다 그렇게 하니까"가 아니라 구체적인 트레이드오프

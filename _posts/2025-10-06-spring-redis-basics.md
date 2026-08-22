@@ -1,8 +1,7 @@
 ---
 title: "Spring Boot와 Redis: 기본 개념과 실무에서 흔히 놓치는 것들"
 date: 2025-10-06
-categories: [아키텍처]
-tags: [redis, spring-boot, caching]
+categories: [DB]
 ---
 
 Redis는 캐시, 큐, 세션 관리 등으로 두루 쓰이는 메모리 기반 Key-Value 저장소다.

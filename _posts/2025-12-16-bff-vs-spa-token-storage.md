@@ -1,8 +1,7 @@
 ---
 title: "BFF 환경에서 AccessToken을 쿠키에 담는 이유"
 date: 2025-12-16
-categories: [아키텍처]
-tags: [architecture, jwt, frontend]
+categories: [개발 고민/설계]
 ---
 
 JWT 기반 인증을 설계하다 보면 항상 나오는 질문이 있다.

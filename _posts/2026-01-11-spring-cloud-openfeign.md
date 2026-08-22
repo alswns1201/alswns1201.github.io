@@ -1,8 +1,7 @@
 ---
 title: "Spring Cloud OpenFeign으로 외부 API 호출하기 — 인터셉터와 에러 디코더가 진짜 핵심인 이유"
 date: 2026-01-11
-categories: [아키텍처]
-tags: [msa, spring-cloud, api-design]
+categories: [개발 고민/설계]
 ---
 
 *(같은 "선언형 HTTP 클라이언트"를 다루는 [Spring HttpInterface](/posts/spring-http-interface/) 글과

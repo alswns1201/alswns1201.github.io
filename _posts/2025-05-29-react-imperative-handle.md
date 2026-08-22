@@ -2,7 +2,6 @@
 title: "React 자식 컴포넌트 제어: forwardRef와 useImperativeHandle"
 date: 2025-05-29
 categories: [프론트엔드]
-tags: [react, frontend]
 ---
 
 React의 기본 원칙은 단방향 데이터 흐름이다 — 부모가 props로 자식에게 값을 내려주고,

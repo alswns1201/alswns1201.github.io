@@ -1,8 +1,7 @@
 ---
 title: "JPA @ManyToOne과 @OneToMany, 그리고 양방향 매핑의 진짜 함정"
 date: 2025-10-11
-categories: [Spring Boot]
-tags: [spring-boot, jpa]
+categories: [Java/Spring]
 ---
 
 1:N 관계를 `@ManyToOne`/`@OneToMany`로 매핑하는 법 자체는 금방 외운다. 진짜 실수는

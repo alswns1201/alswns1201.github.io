@@ -1,8 +1,7 @@
 ---
 title: "AI로 수학 기출문제 변형 서비스 만들기 — 1~3주차 개발일지"
 date: 2026-05-08
-categories: [AI]
-tags: [ai, rag, kafka]
+categories: [LLM]
 ---
 
 RAG와 LLM을 실제로 손에 익히려고 사이드 프로젝트를 하나 시작했다. 주제는 수학

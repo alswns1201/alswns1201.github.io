@@ -1,8 +1,7 @@
 ---
 title: "단방향 암호화 vs 양방향 암호화 — 뭘 저장하느냐가 선택을 결정한다"
 date: 2025-12-05
-categories: [Spring Boot]
-tags: [architecture, spring-security]
+categories: [Java/Spring]
 ---
 
 암호화 방식을 고를 때 진짜 질문은 "어떤 알고리즘이 더 안전한가"가 아니라

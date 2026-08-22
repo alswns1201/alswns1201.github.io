@@ -1,8 +1,7 @@
 ---
 title: "Spring Boot 서블릿 아키텍처: Filter Chain부터 DispatcherServlet까지"
 date: 2026-07-27
-categories: [Spring Boot]
-tags: [spring-boot, architecture]
+categories: [Java/Spring]
 ---
 
 Spring Boot에서 인증 실패, 인코딩 깨짐, 특정 요청만 이상하게 처리되는 버그를

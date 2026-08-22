@@ -1,8 +1,7 @@
 ---
 title: "데이터베이스 인덱스, 제대로 알고 썼더니 빛이 났다 (Feat. MySQL users 테이블)"
 date: 2025-08-22
-categories: [아키텍처]
-tags: [database, mysql, index]
+categories: [DB]
 ---
 
 "인덱스를 걸면 쿼리가 빨라진다"는 말은 절반만 맞다. 어떤 컬럼에, 어떤 순서로, 언제

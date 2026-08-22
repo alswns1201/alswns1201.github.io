@@ -1,8 +1,7 @@
 ---
 title: "Claude API 엔드포인트 정리: /v1/messages 너머의 것들"
 date: 2026-05-04
-categories: [AI]
-tags: [ai, claude-code, api-design]
+categories: [LLM]
 ---
 
 Claude API를 처음 쓰면 대부분 `/v1/messages` 하나로 시작한다. 하지만 실제 프로덕션

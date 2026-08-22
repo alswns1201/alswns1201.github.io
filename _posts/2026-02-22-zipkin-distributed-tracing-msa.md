@@ -1,8 +1,7 @@
 ---
 title: "MSA에서 traceId가 끊기는 이유 — Zipkin 분산 트레이싱과 Feign의 함정"
 date: 2026-02-22
-categories: [아키텍처]
-tags: [msa, spring-boot, monitoring]
+categories: [개발 고민/설계]
 ---
 
 로그만 보고 장애를 추적하기 어려운 이유는 단일 요청이 여러 서비스를 거치기

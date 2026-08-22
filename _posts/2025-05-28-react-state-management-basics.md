@@ -2,7 +2,6 @@
 title: "React 상태 관리: useState 하나로 언제까지 버틸 수 있는가"
 date: 2025-05-28
 categories: [프론트엔드]
-tags: [react, frontend]
 ---
 
 React를 쓰다 보면 상태 관리 도구가 늘어난다 — `useState`에서 시작해 `useContext`, 그리고

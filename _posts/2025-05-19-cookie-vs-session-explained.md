@@ -1,8 +1,7 @@
 ---
 title: "쿠키 vs 세션: HTTP가 상태를 기억 못 해서 생긴 개념들"
 date: 2025-05-19
-categories: [Spring Boot]
-tags: [spring-boot, java, cookie-session]
+categories: [Java/Spring]
 ---
 
 HTTP는 **비연결지향(connectionless)**이고 **상태 정보를 유지하지 않는다(stateless)**.

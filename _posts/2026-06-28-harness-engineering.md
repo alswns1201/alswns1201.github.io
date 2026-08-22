@@ -1,7 +1,7 @@
 ---
 title: "하네스 엔지니어링이란? — AI 에이전트를 '풀어놓지 않고' 쓰는 법"
 date: 2026-06-28
-categories: [AI]
+categories: [LLM]
 ---
 
 ## 왜 이 얘기가 필요한가

@@ -1,8 +1,7 @@
 ---
 title: "Spring HttpInterface: 선언형 HTTP 클라이언트가 실제로 해결하는 문제"
 date: 2025-12-19
-categories: [Spring Boot]
-tags: [spring-boot, api-design]
+categories: [Java/Spring]
 ---
 
 Spring Boot 3 / Spring 6부터 등장한 **HttpInterface**는 외부 HTTP API 호출 방식을

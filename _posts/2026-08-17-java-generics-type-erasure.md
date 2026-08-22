@@ -1,8 +1,7 @@
 ---
 title: "제네릭은 왜 필요하고, 왜 런타임엔 사라지는가 — Function<T,R>과 타입 소거"
 date: 2026-08-17
-categories: [Spring Boot]
-tags: [java, generics, architecture]
+categories: [Java/Spring]
 ---
 
 제네릭이 없던 시절 자바 컬렉션은 전부 `Object`를 담았다.

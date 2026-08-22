@@ -2,7 +2,6 @@
 title: "React 전역 상태 관리: Context가 언제 부족해지는가"
 date: 2025-06-01
 categories: [프론트엔드]
-tags: [react, frontend, state-management]
 ---
 
 전역 상태를 다루는 방법은 Context API 하나가 아니다. 문제는 "Context를 쓸 것이냐 상태

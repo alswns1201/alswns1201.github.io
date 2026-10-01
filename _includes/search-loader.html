@@ -1,0 +1,75 @@
+<!--
+  Title-based search (overrides Chirpy's Simple-Jekyll-Search loader).
+  Chirpy's default matches against every field including full post content and
+  caps results at 10, so posts whose title matches the query often got pushed out
+  by posts that merely mention the keyword in their body. This version matches
+  against titles only and shows every match.
+-->
+
+{% capture not_found %}<p class="mt-5">{{ site.data.locales[include.lang].search.no_results }}</p>{% endcapture %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const input = document.getElementById('search-input');
+    const results = document.getElementById('search-results');
+    if (!input || !results) return;
+
+    const notFound = {{ not_found | strip_newlines | jsonify }};
+    const SNIPPET_LENGTH = 200;
+    let posts = null;
+
+    const escapeHtml = (s) =>
+      String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+
+    const normalize = (s) => String(s).toLowerCase().replace(/\s+/g, ' ').trim();
+
+    const render = (post) => {
+      const categories = post.categories
+        ? `<div class="me-sm-4"><i class="far fa-folder fa-fw"></i>${escapeHtml(post.categories)}</div>`
+        : '';
+      const tags = post.tags ? `<div><i class="fa fa-tag fa-fw"></i>${escapeHtml(post.tags)}</div>` : '';
+      const snippet =
+        post.content.length > SNIPPET_LENGTH ? post.content.slice(0, SNIPPET_LENGTH) + '...' : post.content;
+      return `<article class="px-1 px-sm-2 px-lg-4 px-xl-0">
+        <header>
+          <h2><a href="${post.url}">${escapeHtml(post.title)}</a></h2>
+          <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">${categories}${tags}</div>
+        </header>
+        <p>${escapeHtml(snippet)}</p>
+      </article>`;
+    };
+
+    const search = () => {
+      const query = normalize(input.value);
+      if (!query || !posts) {
+        results.innerHTML = '';
+        return;
+      }
+
+      // 공백으로 나눈 모든 단어가 제목에 포함되어야 매칭 (순서 무관)
+      const terms = query.split(' ');
+      const matches = posts.filter((post) => {
+        const title = normalize(post.title);
+        return terms.every((term) => title.includes(term));
+      });
+
+      // 검색어 전체가 제목에 그대로 들어있는 글을 먼저 보여준다
+      matches.sort((a, b) => {
+        const aExact = normalize(a.title).includes(query) ? 0 : 1;
+        const bExact = normalize(b.title).includes(query) ? 0 : 1;
+        return aExact - bExact;
+      });
+
+      results.innerHTML = matches.length ? matches.map(render).join('') : notFound;
+    };
+
+    fetch('{{ '/assets/js/data/search.json' | relative_url }}')
+      .then((res) => res.json())
+      .then((data) => {
+        posts = data;
+        search();
+      });
+
+    input.addEventListener('input', search);
+  });
+</script>

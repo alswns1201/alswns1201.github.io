@@ -197,3 +197,7 @@ minima → **jekyll-theme-chirpy**(~> 7.6)로 테마 교체, 색상/폰트/카�
 - 로컬 Ruby가 2.6이라 `jekyll build` 불가 → 빌드 검증은 push 후 GitHub Actions 결과로 확인.
 - (2026-10-02) 사용자 요청으로 BFS 실습(원래 id `bfs-with-claude-code-feedback`) 섹션을 "Claude Code 활용" 글에서 삭제.
   해당 redirect도 제거 → 예전 주소는 404가 정상.
+- (2026-10-02) "LLM 확장과 서비스화" 통합 글 해체: 수학 기출문제 변형 개발일지만 남겨 원래 파일/주소
+  (`2026-05-08-ai-math-problem-service-diary.md`)로 복원, 제목 "수학문제 변형 실습을 통한 LLM 사용",
+  `/posts/llm-extension-and-service/`는 여기로 redirect. 프롬프트/Claude API/Skill·Tool·MCP/상용화 4개 글은 삭제(404).
+- (2026-10-02) "Claude Code 활용" 글 제목 → "Claude Code 활용: md 구성 및 /compact·/clear 차이".

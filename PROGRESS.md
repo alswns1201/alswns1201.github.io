@@ -195,3 +195,5 @@ minima → **jekyll-theme-chirpy**(~> 7.6)로 테마 교체, 색상/폰트/카�
 - `theme_mode: light` 고정 (흰 바탕).
 - 사이드바 화살표 아이콘: Chirpy 7.6은 Font Awesome 7을 로드하므로 font-family는 `'Font Awesome 7 Free'` (`c53b06d`).
 - 로컬 Ruby가 2.6이라 `jekyll build` 불가 → 빌드 검증은 push 후 GitHub Actions 결과로 확인.
+- (2026-10-02) 사용자 요청으로 BFS 실습(원래 id `bfs-with-claude-code-feedback`) 섹션을 "Claude Code 활용" 글에서 삭제.
+  해당 redirect도 제거 → 예전 주소는 404가 정상.

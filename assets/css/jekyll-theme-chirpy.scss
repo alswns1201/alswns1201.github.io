@@ -69,7 +69,8 @@
 
       &::before {
         content: '\f105';
-        font-family: 'Font Awesome 6 Free';
+        /* Chirpy 7.6 loads Font Awesome 7; '5 Free' is its legacy alias */
+        font-family: 'Font Awesome 7 Free', 'Font Awesome 5 Free';
         font-weight: 900;
         display: inline-block;
         width: 1em;

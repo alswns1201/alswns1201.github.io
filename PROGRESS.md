@@ -185,3 +185,13 @@ minima → **jekyll-theme-chirpy**(~> 7.6)로 테마 교체, 색상/폰트/카�
 재구성으로 고칠 수 있는 수준이 아니고, 사용자도 이 글을 올리지 않는 쪽을 선택함.
 → **이관 대상 104개 중 남은 미착수/보류 항목 없음. 마이그레이션 단계(4단계 "글
 마이그레이션") 사실상 종료.** 남은 건 5단계(배포 확인, 이미 완료 상태 유지 확인) 정도.
+
+## 글 통합·카테고리 재편 (2026-10-02)
+- LLM 11개 → 3개, Kafka 7개 → 3개로 통합 (`ccf3e2f`). 원문은 `## 원래 제목` 섹션으로 그대로 이어붙임
+  (소제목 한 단계 내림). 예전 URL은 `jekyll-redirect-from`(`redirect_from:`)으로 새 글에 연결.
+  섹션마다 서론/정리가 반복되는 부분은 사용자 검수 후 다듬을 예정.
+- 카테고리: Kafka · LLM · DB · Redis · gRPC · 테스트 · 프론트엔드 · 락 · Java/Spring · 개발 고민/설계 · 인프라
+  (사이드바 순서는 `_includes/topics.html`의 priority). '대용량 고민'은 폐지 (DB/락/설계로 분산).
+- `theme_mode: light` 고정 (흰 바탕).
+- 사이드바 화살표 아이콘: Chirpy 7.6은 Font Awesome 7을 로드하므로 font-family는 `'Font Awesome 7 Free'` (`c53b06d`).
+- 로컬 Ruby가 2.6이라 `jekyll build` 불가 → 빌드 검증은 push 후 GitHub Actions 결과로 확인.

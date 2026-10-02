@@ -1,7 +1,7 @@
 ---
 title: "샤딩 환경의 PK 전략: Shard Key 선택과 Snowflake ID"
 date: 2026-04-04
-categories: [대용량 고민]
+categories: [DB]
 ---
 
 대규모 서비스에서는 단순 `AUTO_INCREMENT` PK 전략이 한계에 부딪히는 지점이 온다.

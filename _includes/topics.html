@@ -1,6 +1,6 @@
 <!-- Posts grouped by topic (category), shown in the right-hand panel -->
 
-{% assign priority = "LLM,Kafka,Java/Spring,DB,개발 고민/설계,대용량 고민" | split: ',' %}
+{% assign priority = "Kafka,LLM,DB,Redis,gRPC,테스트,프론트엔드,락,Java/Spring,개발 고민/설계,인프라" | split: ',' %}
 
 {% assign ordered_names = "" | split: "" %}
 {% for name in priority %}

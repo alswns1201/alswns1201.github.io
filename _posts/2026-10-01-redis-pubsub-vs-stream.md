@@ -1,7 +1,7 @@
 ---
 title: "Redis Pub/Sub과 Stream: 차이, 실무 활용처, Spring 예제 코드"
 date: 2026-10-01
-categories: [DB]
+categories: [Redis]
 ---
 
 *(Redis 자체의 기본 개념과 Spring 연동은 [Spring Boot와 Redis 기본 개념](/posts/spring-redis-basics/) 글에서

@@ -1,7 +1,7 @@
 ---
 title: "Supplier<T>로 '할 일'을 넘기기 — 분산 락 템플릿 예제"
 date: 2026-10-02
-categories: [Java/Spring]
+categories: [락]
 ---
 
 선불 지갑 실습에서 Redisson 분산 락을 붙이면서 `executeWithLock(walletId, () -> ...)` 형태의

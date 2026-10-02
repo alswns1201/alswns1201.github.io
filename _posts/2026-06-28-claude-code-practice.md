@@ -1,5 +1,5 @@
 ---
-title: "Claude Code 활용: 컨텍스트 관리와 하네스 엔지니어링"
+title: "Claude Code 활용: md 구성 및 /compact·/clear 차이"
 date: 2026-06-28
 categories: [LLM]
 redirect_from:

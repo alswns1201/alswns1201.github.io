@@ -4,7 +4,7 @@ date: 2026-10-09
 categories: [Java/Spring]
 ---
 
-서비스 로직에서 "결제 실패", "배치 완료" 같은 일이 생기면 Slack 채널로 알림을 보내고 싶었다.
+결제처럼 중요한 로직이 실패하면 Slack 채널로 알림을 보내고 싶었다.
 Slack 연동 글을 찾아보면 Bot 토큰, Bolt 프레임워크, 슬래시 커맨드까지 나와서 복잡해 보이는데,
 **정해진 채널에 알림만 보내는 거라면 Incoming Webhook 하나면 충분하다.**
 
@@ -93,61 +93,48 @@ public class SlackNotifier {
 - 보내는 JSON은 `{"text": "..."}` 하나다.
 - **알림이 실패해도 예외를 밖으로 던지지 않는다.** Slack이 잠깐 안 된다고 주문이 실패하면 안 되니까, 로그만 남긴다.
 
-## 4. 실제 로직에서 쓰기
+## 4. 실제 로직에서 쓰기 — 실패했을 때만 알림
 
-가장 단순하게는 서비스에서 바로 호출하면 된다.
-
-```java
-slackNotifier.send("결제 실패: 주문 " + orderId);
-```
-
-그런데 이렇게 하면 두 가지가 걸린다.
-
-1. Slack 응답이 느리면 **본 요청도 같이 느려진다.**
-2. 트랜잭션 안에서 보내면, 알림은 나갔는데 **그 뒤에 롤백되는** 경우가 생긴다. ("주문 완료" 알림이 왔는데 실제 주문은 없음)
-
-그래서 **이벤트로 분리하고, 커밋된 뒤에 비동기로** 보낸다.
-
-```java
-public record OrderCompletedEvent(Long orderId, long amount) {}
-```
+알림은 **결제가 실패했을 때만** 보낸다. 성공 알림까지 보내면 채널이 금방 묻혀서 정작 실패를 놓친다.
 
 ```java
 @Service
 @RequiredArgsConstructor
-public class OrderService {
+public class PaymentFacade {
 
-	private final OrderRepository orderRepository;
-	private final ApplicationEventPublisher eventPublisher;
-
-	@Transactional
-	public void complete(Long orderId) {
-		Order order = orderRepository.findById(orderId).orElseThrow();
-		order.complete();
-		eventPublisher.publishEvent(new OrderCompletedEvent(orderId, order.getAmount()));
-	}
-}
-```
-
-```java
-@Component
-@RequiredArgsConstructor
-public class SlackAlertListener {
-
+	private final PaymentService paymentService;   // @Transactional 로직
 	private final SlackNotifier slackNotifier;
 
-	@Async
-	@TransactionalEventListener(phase = TransactionPhase.AFTER_COMMIT)
-	public void on(OrderCompletedEvent event) {
-		slackNotifier.send("주문 완료 :white_check_mark: 주문번호 %d, 금액 %,d원"
-				.formatted(event.orderId(), event.amount()));
+	public void pay(Long orderId, long amount) {
+		try {
+			paymentService.pay(orderId, amount);
+		} catch (Exception e) {
+			slackNotifier.send("🚨 결제 실패: 주문 %d, 금액 %,d원, 사유 %s"
+					.formatted(orderId, amount, e.getMessage()));
+			throw e;                                   // 실패 처리는 원래대로 진행
+		}
 	}
 }
 ```
 
-- `AFTER_COMMIT`: 트랜잭션이 **커밋된 뒤에만** 실행된다. 롤백되면 알림도 안 간다.
-- `@Async`: 별도 스레드에서 보내서 본 요청이 Slack 응답을 기다리지 않는다. (`@EnableAsync` 필요)
-- 서비스는 "주문이 완료됐다"는 사실만 알리고, Slack을 몰라도 된다.
+- **성공하면 아무것도 안 보낸다.** catch에 들어왔을 때만 알림이 나간다.
+- 알림을 보낸 뒤 **예외는 다시 던진다.** 알림은 "알려 주는 것"일 뿐, 실패 응답·롤백 같은 원래 처리를 바꾸면 안 된다.
+- try/catch를 **트랜잭션 밖(Facade)**에 둔다. `@Transactional` 메서드 안에서 잡으면 커밋 단계에서 나는 실패(DB 제약 조건 위반 등)는 못 잡는다.
+  밖에서 잡으면 트랜잭션이 롤백까지 끝난, **최종적으로 실패한 경우**만 알림이 간다.
+- 비동기로 빼지 않고 그냥 보낸다. 실패할 때만 호출되니 Slack 응답을 기다리는 시간은 실패한 요청에만 붙는다.
+  대신 Slack이 응답하지 않을 때 오래 붙잡히지 않도록 **타임아웃은 짧게** 걸어 둔다.
+
+```java
+public SlackNotifier(RestClient.Builder builder,
+					 @Value("${slack.webhook-url}") String webhookUrl) {
+	SimpleClientHttpRequestFactory factory = new SimpleClientHttpRequestFactory();
+	factory.setConnectTimeout(Duration.ofSeconds(2));
+	factory.setReadTimeout(Duration.ofSeconds(3));
+
+	this.restClient = builder.requestFactory(factory).build();
+	this.webhookUrl = webhookUrl;
+}
+```
 
 ## 5. 메시지 꾸미기 (선택)
 
@@ -179,4 +166,4 @@ public class SlackAlertListener {
 ## 한 줄 정리
 
 > 정해진 채널에 알림만 보낼 거라면 Slack 앱에서 Incoming Webhook URL을 받아 JSON을 POST하면 끝이다.
-> 실제 로직에서는 이벤트 + `AFTER_COMMIT` + `@Async`로 분리해서, 알림 때문에 본 로직이 느려지거나 깨지지 않게 한다.
+> 실제 로직에서는 트랜잭션 밖에서 실패를 잡았을 때만 알림을 보내고, 알림이 실패해도 본 로직은 깨지지 않게 한다.

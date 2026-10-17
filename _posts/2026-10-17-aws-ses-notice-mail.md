@@ -10,6 +10,8 @@ SMTP 서버를 직접 운영하지 않고, Spring 서버에서 **AWS SDK for Jav
 디자이너에게 받은 HTML을 **SES 템플릿**으로 등록하고, SES 쪽 준비부터 의존성, `SesClient` 설정, 템플릿 발송, 이벤트 리스너 처리까지 순서대로 정리해 둔다.
 
 > 글에 나오는 도메인, 메일 주소, 템플릿·클래스 이름과 메일 문구는 모두 예시로 바꿔 적었다.
+>
+> 실습 코드: [github.com/alswns1201/ses-template-mail](https://github.com/alswns1201/ses-template-mail) — 커밋 하나가 한 단계라 `git log --reverse`로 따라가면 된다.
 
 ## SES란
 

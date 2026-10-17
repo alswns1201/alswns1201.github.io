@@ -9,6 +9,8 @@ categories: [AWS]
 전체 구조와 각 단계에서 무엇을 하는지 정리해 둔다.
 
 > 실무에서 만든 구조를 일반화해서 적었다. 서비스·큐·테이블·함수·API 이름은 모두 예시 이름이고, 코드는 구조를 보여 주기 위한 예시 코드다.
+>
+> 실습 코드: [github.com/alswns1201/sqs-lambda-push](https://github.com/alswns1201/sqs-lambda-push) — 커밋 하나가 한 단계라 `git log --reverse`로 따라가면 된다.
 
 ## 전체 구조
 

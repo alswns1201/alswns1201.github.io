@@ -10,6 +10,8 @@ Spring Boot에 적용한 방법과 클러스터라서 신경 써야 했던 점�
 
 > 실무에서 적용한 내용을 일반화해서 적었다. 키 이름, 제한 횟수, 클래스 이름은 예시다.
 > Lua 스크립트 자체가 처음이라면 [Redis Lua 스크립트 쉽게 이해하기](/posts/redis-lua-script-daily-limit/)를 먼저 보면 좋다.
+>
+> 실습 코드: [github.com/alswns1201/redis-cluster-rate-limit](https://github.com/alswns1201/redis-cluster-rate-limit) — 커밋 하나가 한 단계라 `git log --reverse`로 따라가면 된다.
 
 ## 왜 문자 인증 API에 횟수 제한이 필요한가
 

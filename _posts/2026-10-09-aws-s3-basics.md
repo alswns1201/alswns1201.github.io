@@ -1,7 +1,7 @@
 ---
 title: "이미지 저장용 S3 버킷 만들기 — S3 URL vs CloudFront URL"
 date: 2026-10-09
-categories: [인프라]
+categories: [AWS]
 ---
 
 서비스에서 쓰는 이미지를 저장하려고 S3 버킷을 만들었다.

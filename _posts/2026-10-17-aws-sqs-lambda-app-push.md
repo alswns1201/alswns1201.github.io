@@ -2,7 +2,6 @@
 title: "SQS + Lambda + DynamoDB로 앱 푸시 보내기"
 date: 2026-10-17
 categories: [AWS]
-mermaid: true
 ---
 
 앱 푸시(FCM)를 **API 서버에서 바로 보내지 않고**, SQS에 넣어 두면 Lambda가 꺼내서 보내는 구조로 만들었다.
@@ -15,22 +14,7 @@ mermaid: true
 
 **발송(Producer) → SQS → Lambda(Consumer) → FCM / DynamoDB, 조회는 DynamoDB에서**
 
-```mermaid
-flowchart LR
-    Admin["어드민<br/>전체/선택 푸시 등록"] -- "POST /push" --> Api["API 서버 (Producer)<br/>NotificationPushService"]
-    Batch["배치 서버 (Producer)<br/>조건 기반 자동 푸시"] -- "메시지 전송" --> SQS[["Amazon SQS<br/>push-queue"]]
-    Api -- "sendMessageBatch" --> SQS
-    SQS -- "Event Source Mapping<br/>(자동 트리거)" --> Lambda["AWS Lambda (Consumer, Python)<br/>push-sender"]
-    Lambda -- "send_each" --> FCM["Firebase FCM"] --> Device["사용자 기기"]
-
-    Api -- "statistics 생성 · totalUsers 보정" --> Stat[("DynamoDB<br/>push_statistics")]
-    Batch -- "statistics 생성 · 보정" --> Stat
-    Lambda -- "statistics ADD" --> Stat
-    Lambda -- "history put" --> Hist[("DynamoDB<br/>push_history")]
-
-    AdminView["어드민 · 푸시 히스토리"] -. "조회" .-> Stat
-    App["앱 · 알림함"] -. "조회 · 읽음 처리" .-> Hist
-```
+![앱 푸시 발송 흐름: Producer → SQS → Lambda → FCM, 결과는 DynamoDB](/assets/img/posts/aws-sqs-lambda-app-push.png)
 
 구성 요소별 역할은 이렇다.
 

@@ -217,6 +217,8 @@ server:
   forward-headers-strategy: native   # 신뢰하는 프록시가 붙인 X-Forwarded-For 기준으로 remoteAddr 설정
 ```
 
+> 자세한 내용(ALB append 확인, native 설정)은 [X-Forwarded-For와 getRemoteAddr() 차이](/posts/x-forwarded-for-vs-remote-addr/)에 따로 정리했다.
+
 ## 주의할 점
 
 - **IP 제한만으로는 부족하다.** 같은 IP를 여러 사람이 쓰기도 하고(회사, 학교), 공격자는 IP를 바꿀 수 있다.

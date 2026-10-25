@@ -180,7 +180,6 @@ exclude:
   - "package*.json"
   - post_ids.txt
   - posts_meta.tsv
-  - PROGRESS.md
   - CLAUDE.md
   - vendor
   - Gemfile.lock

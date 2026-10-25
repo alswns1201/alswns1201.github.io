@@ -1,39 +1,33 @@
-# 프로젝트: 티스토리 → GitHub Pages 블로그 이관
+# 기술 블로그: alswns1201.github.io
 
-## 목표
-티스토리(https://mjkim1201.tistory.com/, 블로그명 "코딩하는 기록러")에 있는 글을
-GitHub Pages(`alswns1201.github.io`, Jekyll 기반)로 정리해서 이관한다.
-개인 페이지 레포이므로 레포명은 반드시 `alswns1201.github.io`여야 루트 도메인으로 서빙된다.
+Jekyll(`jekyll-theme-chirpy` ~> 7.6) 기반 GitHub Pages 블로그. 포트폴리오/면접용이라
+"면접관이 봤을 때 고민을 많이 한 글"로 읽혀야 한다. (티스토리 이관은 2026-10 완료)
 
-## 진행 상황
-진행 상황은 이 폴더의 `PROGRESS.md`에서 관리한다. 세션을 새로 시작해도 `PROGRESS.md`를
-먼저 읽고 어디까지 됐는지 파악한 뒤 이어서 진행할 것.
+## 글 쓰기 규칙
+- 파일: `_posts/YYYY-MM-DD-영문-slug.md`, 주소는 `/posts/영문-slug/`.
+- front matter:
+  ```yaml
+  ---
+  title: "제목"
+  date: 2026-10-24 10:00:00 +0900
+  categories: [인프라]
+  ---
+  ```
+  `layout: post`는 `_config.yml` defaults로 자동 적용되니 안 써도 된다.
+- 카테고리는 하나만 쓴다. 지금 쓰는 카테고리는 `grep -rh "^categories:" _posts | sort | uniq -c`로 확인한다.
+  새 카테고리가 필요하면 사용자에게 먼저 묻고, 추가하면 `_includes/topics.html`의 priority에도 넣는다.
+- 이미지: `assets/img/posts/`.
+- 글을 합치거나 주소를 바꾸면 새 글에 `redirect_from:`으로 예전 주소를 연결한다 (`jekyll-redirect-from`).
 
-## GitHub 연동 방식
-별도 GitHub MCP 서버를 쓰지 않는다. `gh` CLI가 이미 계정 `alswns1201`로 인증되어 있고
-`repo` 권한도 있으므로 레포 생성/커밋/푸시는 전부 `gh`/`git` 명령으로 처리한다.
+## 내용 원칙
+- 없던 실무 경험담은 지어내지 않는다. 대신 왜 그런지, 트레이드오프, 흔한 실수 같은 기술적인 깊이를 더한다.
+- 회사 업무를 기반으로 쓴 글에는 회사를 알아볼 수 있는 정보를 넣지 않는다. 회사명·서비스명,
+  리소스 이름(Lambda/큐/테이블), API 경로, 업무 고유 기능, 계정·시크릿이 여기에 해당한다.
+  이름은 일반화해서 "예시 이름" 안내를 달고, 사내 다이어그램은 원본과 다른 레이아웃으로 다시 그린다.
+- 회사 업무 기반 글을 올린 뒤에는 경력기술서 누적본도 갱신한다 (`career-log` 스킬).
 
-## 소스 블로그 정보
-- 전체 글 개수: 사이트맵 기준 **104개** (`/sitemap.xml`의 숫자 경로, `post_ids.txt` 참고)
-  - 티스토리 UI 상 최신 글 번호는 108이지만 101, 101 근방 등 결번이 있어 실제로는 104개.
-- RSS(`/rss`)는 최신 10개만 주므로 전체 수집에는 못 씀. 개별 글 URL(`/{id}`)을 직접 긁어야 함.
-- 글 메타데이터 추출 방법 (curl로 raw HTML 받아서 grep):
-  - 제목: `<meta property="og:title" content="...">`
-  - 발행일: `<meta property="article:published_time" content="...">`
-  - 카테고리: HTML 내 `window.T.entryInfo = {"entryId":...,"categoryLabel":"..."}` 에서 추출.
-    (사이드바의 `/category/...` 링크들은 전체 카테고리 트리라서 글의 실제 카테고리가 아님 — 착오 주의)
-- 본문 HTML은 RSS의 `<description>`에도 들어있지만, 전체 글은 개별 글 페이지에서 직접 파싱해야 함.
-
-## 알려진 이슈 (사용자 확인 필요)
-- 글 중복 의심 사례 발견: "하네스 엔지니어링"(104번)과 "하네스 엔지니어링이란?"(100번)이 같은 주제로 보임.
-  이런 케이스를 스크리닝해서 사용자에게 확인받은 뒤 병합/삭제 여부를 결정할 것.
-- 사용자가 "모든 글이 정확한 내용은 아니다"라고 밝힘 → 이관 전 내용 검수가 필요하며, 사용자 확인 없이
-  임의로 내용을 고치거나 요약해서 올리지 말 것.
-
-## 작업 파일 위치
-- 스크래핑 스크립트/중간 산출물은 세션 스크래치패드에 두고, 최종 결과만 이 레포 폴더로 옮긴다.
-- 글 목록/메타데이터: 이 폴더에 `posts_meta.tsv` (id, title, category, published_at)로 정리해 보관 예정.
-
-## 진행 원칙
-- 레포 생성, 첫 push 같은 되돌리기 번거로운 작업 전에는 사용자에게 먼저 확인한다.
-- 글을 markdown으로 옮길 때 원문 내용을 임의로 바꾸지 않는다 (사용자가 직접 검수하겠다고 함).
+## 빌드/배포
+- `gh`/`git`으로 커밋·push (계정 `alswns1201`). push 전에는 사용자에게 확인한다.
+- 로컬 Ruby가 2.6이라 `jekyll build`가 안 된다. 빌드 결과는 push한 뒤 GitHub Actions(`.github/workflows/pages.yml`)로 확인한다.
+- 테마 색/폰트는 `assets/css/jekyll-theme-chirpy.scss`에서 바꾼다. 테마는 `theme_mode: light` 고정이고,
+  아이콘 폰트는 `'Font Awesome 7 Free'`를 쓴다.

@@ -178,9 +178,6 @@ exclude:
   - purgecss.js
   - "*.config.js"
   - "package*.json"
-  - post_ids.txt
-  - posts_meta.tsv
-  - CLAUDE.md
   - vendor
   - Gemfile.lock
   - _raw

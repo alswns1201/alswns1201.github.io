@@ -11,3 +11,6 @@ vendor/
 node_modules/
 _sass/vendors
 assets/js/dist
+
+# 비공개: 경력기술서 (회사 실명 포함, 절대 커밋 금지)
+경력기술서_누적/

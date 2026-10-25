@@ -33,3 +33,7 @@ Jekyll(`jekyll-theme-chirpy` ~> 7.6) 기반 GitHub Pages 블로그. 포트폴리
 - 로컬 Ruby가 2.6이라 `jekyll build`가 안 된다. 빌드 결과는 push한 뒤 GitHub Actions(`.github/workflows/pages.yml`)로 확인한다.
 - 테마 색/폰트는 `blog/assets/css/jekyll-theme-chirpy.scss`에서 바꾼다. 테마는 `theme_mode: light` 고정이고,
   아이콘 폰트는 `'Font Awesome 7 Free'`를 쓴다.
+
+## 비공개 폴더
+- `경력기술서_누적/`: 경력기술서 누적본 (회사 실명 포함). `.gitignore`로 제외되어 있으니 절대 커밋하지 않는다.
+  갱신은 `career-log` 스킬로 한다.

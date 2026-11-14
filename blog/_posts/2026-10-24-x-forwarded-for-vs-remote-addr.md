@@ -10,7 +10,7 @@ ALB 뒤에서는 왜 ALB 설정이 **append**인지 확인해야 하는지,
 그리고 Spring Boot에서 `server.forward-headers-strategy: native`로 처리하는 방법까지 적어 둔다.
 
 > 실무에서 적용한 내용을 일반화해서 적었다. IP 주소와 CIDR은 예시 값이다.
-> 이 내용을 실제로 쓴 곳은 [Redis 클러스터 + Lua 스크립트로 문자 인증 API IP별 횟수 제한하기](/posts/redis-cluster-lua-sms-ip-limit/)다.
+> 이 내용을 실제로 쓴 곳은 [Redis Cluster 이해하기 — 해시 슬롯, 해시 태그, Lua 스크립트 규칙](/posts/redis-cluster-hash-slot-lua/)의 IP별 횟수 제한 예시다.
 
 ## 한눈에 보는 차이
 

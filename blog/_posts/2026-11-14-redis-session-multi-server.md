@@ -61,7 +61,7 @@ if (!"access".equals(c.get("typ", String.class))) {
 
 ## 키 설계: 클러스터에서는 "같이 바꿀 키를 같은 슬롯에"
 
-Redis Cluster는 키를 16,384개 슬롯에 나눠 여러 노드에 둔다. **여러 키를 한 번에 다루는 명령(MULTI, Lua 스크립트, MGET 등)은 모든 키가 같은 슬롯에 있어야 한다.** 다르면 `CROSSSLOT` 에러가 난다. 자세한 건 [Redis 클러스터 + Lua 글](/posts/redis-cluster-lua-sms-ip-limit/)에 정리했다.
+Redis Cluster는 키를 16,384개 슬롯에 나눠 여러 노드에 둔다. **여러 키를 한 번에 다루는 명령(MULTI, Lua 스크립트, MGET 등)은 모든 키가 같은 슬롯에 있어야 한다.** 다르면 `CROSSSLOT` 에러가 난다. 자세한 건 [Redis Cluster 이해하기](/posts/redis-cluster-hash-slot-lua/)에 정리했다.
 
 세션에는 "같이 바꿔야 하는 키"가 꼭 생긴다.
 

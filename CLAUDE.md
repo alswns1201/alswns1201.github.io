@@ -17,11 +17,13 @@ Jekyll(`jekyll-theme-chirpy` ~> 7.6) 기반 GitHub Pages 블로그. 포트폴리
   ```
   `layout: post`는 `blog/_config.yml` defaults로 자동 적용되니 안 써도 된다.
 - 카테고리는 하나만 쓴다. 지금 쓰는 카테고리는 `grep -rh "^categories:" blog/_posts | sort | uniq -c`로 확인한다.
-  새 카테고리가 필요하면 사용자에게 먼저 묻고, 추가하면 `blog/_includes/topics.html`의 priority에도 넣는다.
+  주제에 맞는 기존 카테고리가 없으면 새 카테고리를 만들고, 바로 `blog/_includes/topics.html`의 priority에도 넣어 "주제별 글"에 나오게 한다 (따로 묻지 않음, 만든 사실은 보고).
 - 이미지: `blog/assets/img/posts/`.
 - 글을 합치거나 주소를 바꾸면 새 글에 `redirect_from:`으로 예전 주소를 연결한다 (`jekyll-redirect-from`).
 
 ## 내용 원칙
+- 글은 항상 **개념이 먼저**다. 한 글에는 한 주제만 다루고(주제가 섞이면 나누거나 다른 글로 링크),
+  실무 이야기는 개념을 뒷받침하는 짧은 "예시" 절 정도로만 넣는다. 실무 사례를 중심으로 글을 짜지 않는다.
 - 없던 실무 경험담은 지어내지 않는다. 대신 왜 그런지, 트레이드오프, 흔한 실수 같은 기술적인 깊이를 더한다.
 - 회사 업무를 기반으로 쓴 글에는 회사를 알아볼 수 있는 정보를 넣지 않는다. 회사명·서비스명,
   리소스 이름(Lambda/큐/테이블), API 경로, 업무 고유 기능, 계정·시크릿이 여기에 해당한다.
